@@ -2,86 +2,18 @@
 
 html{
     position: relative;
-    min-height: 100%;
+    height: 100%;
 }
 
 body {
-   margin-bottom: 90px; /* size of the sticky footer */
     font-family: Roboto,Helvetica,Arial,sans-serif; /* Roboto Condensed for titles */
     font-size: 16px;
-    color: #5a5a5a; 
-}
-
-
-/* ----------------------------------------------  Body of a page  ---------------------------------------------- */
-
-.body-content {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 133px;
-    z-index: -1 ;
-    margin-bottom: 110px; /* size of the sticky footer + 20px */
-}
-
-@media only screen and (min-width: 490px) { 
-    .body-content {
-        top: 193px;
-    }
-}
-
-.hero-img {
     width: 100%;
-    border-bottom: solid 1px #ffffff;
-    border-top: solid 3px #eeeeee;
+    color: #5a5a5a; 
+    min-height: 100%;
+    position: relative;
+    /* padding-bottom: 30px; /* size of the footer */
 }
-
-h1 {
-    font-size: 24px;
-    padding: 20px 40px;
-}
-h2 {
-    font-size: 20px;
-    padding: 15px 40px;
-}
-
-p {
-    padding: 0 40px;
-    text-align: justify;
-    line-height: 1.5;
-    font-weight: 400;
-}
-
-@media only screen and (min-width: 768px) { 
-    h1, h2, p {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-}
-@media only screen and (min-width: 992px) { 
-    h1, h2, p {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-}
-
-@media only screen and (min-width: 1200px) { 
-    h1, h2, p {
-        padding-left: 200px;
-        padding-right: 200px;
-    }
-}
-
-a {
-    color: #4f8f00;
-}
-
-.dark {
-    font-weight: 500 ;
-    font-family: Roboto Condensed ,Helvetica,Arial,sans-serif;
-    color: #373737
-}
-
 
 
 /* ----------------------------------------------  Banner  ---------------------------------------------- */
@@ -89,8 +21,7 @@ a {
 .banner {
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     height: 90px;
     font-size: 18px; 
     font-weight: 300 ;
@@ -99,7 +30,7 @@ a {
     text-align: center;
 }
 
-/* there is a margin of 1the same size as the font size up and down on p element. I need less */
+/* there is a margin of the same size as the font size up and down on p element. I need less */
 @media only screen and (max-width: 489px) { 
     .banner p {
         margin: 10px 0;
@@ -113,6 +44,26 @@ a {
 
 .banner img {
     display: none;
+}
+
+@media only screen and (min-width: 360px) { 
+    .banner p {
+        padding: 10px 0 0 110px;
+        text-align : left;
+        font-size: 18px;
+        margin: 5px 0;
+    }
+}
+
+@media only screen and (min-width: 360px) { 
+    .banner img {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 15px;
+        height: 80px;
+        width : 80px;
+    }
 }
 
 @media only screen and (min-width: 490px) { 
@@ -139,11 +90,25 @@ a {
     }
 }
 
+/* for very small screen */
+@media only screen and (max-width: 313px) {
+    p { 
+        font-size: 14px;
+    }
+}
+
+
+.name {
+    text-transform: uppercase; 
+    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+    color: #373737;
+    font-weight: 800;
+}
+
 /* ----------------------------------------------  Navbar  ---------------------------------------------- */
 .navbar {
     position: fixed;
-    left: 0;
-    right: 0;
+    width: 100%;
     top: 90px;
     height: 40px;
     font-weight: 400 ;
@@ -176,16 +141,103 @@ a {
     }
 }
 
+/* for very small screen */
+@media only screen and (max-width: 313px) {
+    a { 
+        font-size: 14px;
+    }
+}
+
+/* ----------------------------------------------  Body of a page  ---------------------------------------------- */
+
+.body-content {
+    z-index: -1 ; /* so it scrolls under the sticky banner + navbar */
+    margin-top: 133px; /* size of banner  + navbar */
+    margin-bottom: 40px; /* to leave some room above the footer */
+}
+
+
+@media only screen and (min-width: 490px) { 
+    .body-content {
+        margin-top: 193px;
+    }
+}
+
+.hero-img {
+    width: 100%;
+    border-bottom: solid 1px #ffffff;
+    border-top: solid 3px #eeeeee;
+}
+
+h1 {
+    font-size: 18px;
+    padding: 1em 40px 1em 40px;
+    text-align: center;
+    text-transform: uppercase; 
+}
+h2 {
+    font-size: 18px;
+    padding: 15px 40px;
+    padding: 2em 40px 0 40px;
+    color: #4f8f00; 
+}
+
+p {
+    padding: 0 40px;
+    text-align: justify;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+@media only screen and (min-width: 490px) {
+    h1 {
+        font-size: 24px;
+    } 
+}
+
+@media only screen and (min-width: 490px) {
+    h2 {
+        font-size: 20px;
+    } 
+}
+
+@media only screen and (min-width: 768px) { 
+    h1, h2, p {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+@media only screen and (min-width: 992px) { 
+    h1, h2, p {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media only screen and (min-width: 1200px) { 
+    h1, h2, p {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+
+a {
+    color: #5a5a5a;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #4f8f00;
+}
+
+
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
 
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
     height: 30px;
-    padding: 20px 0 40px 40px;
-    font-size: 14px;
+    width: 100%;
+    padding: 20px 0 40px 20px;
     background-color: #373737;
     color: #ffffff;
   }
@@ -212,5 +264,12 @@ footer p a:hover{
 
 .to-right {
     float: right;
-    padding-right: 60px;
+    padding-right: 20px;
   }
+
+  @media only screen and (min-width: 490px) {
+    .to-right {
+        float: right;
+        padding-right: 50px;
+      }
+} 
