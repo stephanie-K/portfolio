@@ -2,38 +2,30 @@
 
 html{
     position: relative;
-    height: 100%;
 }
 
 body {
+    margin: 0;
     font-family: Roboto,Helvetica,Arial,sans-serif; /* Roboto Condensed for titles */
     font-size: 16px;
-    width: 100%;
     color: #5a5a5a; 
     min-height: 100%;
     position: relative;
-    a {
-        color: #5a5a5a;
-        font-weight: 500;
-    }
-    /* padding-bottom: 30px; /* size of the footer */
-    /* for very small screen */
-    @media only screen and (max-width: 313px) {
-        p { 
-            font-size: 14px;
-        }
+}
+
+a {
+    color: #5a5a5a;
+    font-weight: 500;
+}
+
+/* for very small screen */
+@media only screen and (max-width: 313px) {
+    p { 
+        font-size: 14px;
     }
 }
 
 /* ----------------------------------------------  Helpers  ---------------------------------------------- */
-
-.to-right {
-    float: right;
-    margin-right: 20px;
-    @media only screen and (min-width: 490px) {
-        margin-right: 50px;
-    } 
-}
 
 .header-img {
     width: 50%;
@@ -56,38 +48,38 @@ body {
 
 .banner {
     position: fixed;
+    z-index: 1 ; /* so the body content scrolls under the sticky banner + navbar */
     top: 0;
-    width: 100%;
     height: 90px;
-    font-size: 18px; 
-    font-weight: 300 ;
     background-color: #4f8f00 ;
     color: #eeeeee;
-    text-align: center;
+    width: 100%;
+    p {
+        text-align: center;
+    }
     img {
         display: none;
     }
     /* on small screen */
     @media only screen and (min-width: 360px) { 
         p {
-            padding: 10px 0 0 110px;
+            padding: 10px 0 0 120px;
             text-align : left;
             font-size: 18px;
             margin: 5px 0;
         }
         img {
+            float: left;
             display: block;
-            position: fixed;
-            top: 10px;
-            left: 15px;
+            margin-top: 10px;
+            margin-left: 15px;
             height: 80px;
             width : 80px;
         }
     }
-    /* there is a margin of the same size as the font size up and down on p element. I need less */
+
     @media only screen and (min-width: 490px) { 
         height: 150px;
-
         p {
             margin: 15px 0;
             padding: 10px 0 0 200px;
@@ -95,10 +87,8 @@ body {
             font-size: 22px;
         }
         img {
-            display: block;
-            position: fixed;
-            top: 15px;
-            left: 30px;
+            margin-top: 15px;
+            float: left;
             height: 130px;
             width : 130px;
         }
@@ -115,6 +105,7 @@ body {
 /* ----------------------------------------------  Navbar  ---------------------------------------------- */
 .navbar {
     position: fixed;
+    z-index: 1 ; /* so the body content scrolls under the sticky banner + navbar */
     width: 100%;
     top: 90px;
     height: 40px;
@@ -150,10 +141,8 @@ body {
 
 .body-content {
     position: relative;
-    z-index: -1 ; /* so it scrolls under the sticky banner + navbar */
     margin-top: 133px; /* size of banner  + navbar */
     margin-bottom: 40px; /* to leave some room above the footer */
-    /* or min-width width: 100%; */
 
     @media only screen and (min-width: 490px) { 
         margin-top: 193px;
@@ -224,7 +213,6 @@ p {
 
 footer {
     height: 30px;
-    width: 100%;
     padding: 20px 0 40px 20px;
     background-color: #373737;
     color: #ffffff;
@@ -239,6 +227,14 @@ footer {
     @media only screen and (min-width: 490px) {
         padding: 30px 0 30px 40px;
     }
+}
+
+.to-right {
+    float: right;
+    margin-right: 20px;
+    @media only screen and (min-width: 490px) {
+        margin-right: 40px;
+    } 
 }
 
 
