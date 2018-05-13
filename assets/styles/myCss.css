@@ -25,6 +25,7 @@ a {
 
 .button {
   color: #ffffff;
+  text-transform: uppercase;
   background-color: #4f8f00;
   padding: 7px 12px;
   text-decoration: none; }
