@@ -1,275 +1,206 @@
 /*  all my CSS here */
-
-html{
-    position: relative;
-    height: 100%;
-}
+html {
+  position: relative;
+  height: 100%; }
 
 body {
-    font-family: Roboto,Helvetica,Arial,sans-serif; /* Roboto Condensed for titles */
-    font-size: 16px;
-    width: 100%;
-    color: #5a5a5a; 
-    min-height: 100%;
-    position: relative;
-    /* padding-bottom: 30px; /* size of the footer */
-}
+  font-family: Roboto,Helvetica,Arial,sans-serif;
+  /* Roboto Condensed for titles */
+  font-size: 16px;
+  width: 100%;
+  color: #5a5a5a;
+  min-height: 100%;
+  position: relative;
+  /* padding-bottom: 30px; /* size of the footer */
+  /* for very small screen */ }
+  body a {
+    color: #5a5a5a;
+    font-weight: 500; }
+  @media only screen and (max-width: 313px) {
+    body p {
+      font-size: 14px; } }
 
+/* ----------------------------------------------  Helpers  ---------------------------------------------- */
+.to-right {
+  float: right;
+  margin-right: 20px; }
+  @media only screen and (min-width: 490px) {
+    .to-right {
+      margin-right: 50px; } }
+
+.header-img {
+  width: 50%; }
+
+.button {
+  color: #ffffff;
+  background-color: #4f8f00;
+  padding: 7px 12px;
+  text-decoration: none; }
+
+.button:hover {
+  color: #4f8f00;
+  background-color: #ffffff;
+  padding: 5px 10px;
+  border: solid 2px #4f8f00; }
 
 /* ----------------------------------------------  Banner  ---------------------------------------------- */
-
 .banner {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 90px;
-    font-size: 18px; 
-    font-weight: 300 ;
-    background-color: #4f8f00 ;
-    color: #eeeeee;
-    text-align: center;
-}
-
-/* there is a margin of the same size as the font size up and down on p element. I need less */
-@media only screen and (max-width: 489px) { 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  font-size: 18px;
+  font-weight: 300;
+  background-color: #4f8f00;
+  color: #eeeeee;
+  text-align: center;
+  /* on small screen */
+  /* there is a margin of the same size as the font size up and down on p element. I need less */ }
+  .banner img {
+    display: none; }
+  @media only screen and (min-width: 360px) {
     .banner p {
-        margin: 10px 0;
-    }
-}
-@media only screen and (min-width: 490px) { 
-    .banner p {
-        margin: 15px 0;
-    }
-}
-
-.banner img {
-    display: none;
-}
-
-@media only screen and (min-width: 360px) { 
-    .banner p {
-        padding: 10px 0 0 110px;
-        text-align : left;
-        font-size: 18px;
-        margin: 5px 0;
-    }
-}
-
-@media only screen and (min-width: 360px) { 
+      padding: 10px 0 0 110px;
+      text-align: left;
+      font-size: 18px;
+      margin: 5px 0; }
     .banner img {
-        display: block;
-        position: fixed;
-        top: 10px;
-        left: 15px;
-        height: 80px;
-        width : 80px;
-    }
-}
-
-@media only screen and (min-width: 490px) { 
+      display: block;
+      position: fixed;
+      top: 10px;
+      left: 15px;
+      height: 80px;
+      width: 80px; } }
+  @media only screen and (min-width: 490px) {
     .banner {
-        height: 150px;
-    }
-}
-@media only screen and (min-width: 490px) { 
-    .banner p {
+      height: 150px; }
+      .banner p {
+        margin: 15px 0;
         padding: 10px 0 0 200px;
-        text-align : left;
-        font-size: 22px;
-    }
-}
-
-@media only screen and (min-width: 490px) { 
-    .banner img {
+        text-align: left;
+        font-size: 22px; }
+      .banner img {
         display: block;
         position: fixed;
         top: 15px;
         left: 30px;
         height: 130px;
-        width : 130px;
-    }
-}
-
-/* for very small screen */
-@media only screen and (max-width: 313px) {
-    p { 
-        font-size: 14px;
-    }
-}
-
+        width: 130px; } }
 
 .name {
-    text-transform: uppercase; 
-    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
-    color: #373737;
-    font-weight: 800;
-}
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+  color: #373737;
+  font-weight: 800; }
 
 /* ----------------------------------------------  Navbar  ---------------------------------------------- */
 .navbar {
-    position: fixed;
-    width: 100%;
-    top: 90px;
-    height: 40px;
-    font-weight: 400 ;
-    background-color: #eeeeee ;
-    border-bottom: solid 3px #eeeeee;
-
-}
-
-@media only screen and (min-width: 490px) { 
+  position: fixed;
+  width: 100%;
+  top: 90px;
+  height: 40px;
+  font-weight: 400;
+  background-color: #eeeeee;
+  border-bottom: solid 3px #eeeeee; }
+  .navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    /* for very small screen */ }
+    @media only screen and (max-width: 313px) {
+      .navbar a {
+        font-size: 14px; } }
+    @media only screen and (min-width: 490px) {
+      .navbar a {
+        padding: 10px 30px; } }
+  .navbar a:hover {
+    border-bottom: solid 3px #4f8f00; }
+  @media only screen and (min-width: 490px) {
     .navbar {
-        top : 150px;
-    }
-}
-
-.navbar  a {
-        float: left;
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        padding: 10px 20px;
-}
-
-.navbar a:hover {
-    border-bottom: solid 3px #4f8f00;
-}
-
-@media only screen and (min-width: 490px) {
-    .navbar  a {
-        padding: 10px 30px;
-    }
-}
-
-/* for very small screen */
-@media only screen and (max-width: 313px) {
-    a { 
-        font-size: 14px;
-    }
-}
+      top: 150px; } }
 
 /* ----------------------------------------------  Body of a page  ---------------------------------------------- */
-
 .body-content {
-    z-index: -1 ; /* so it scrolls under the sticky banner + navbar */
-    margin-top: 133px; /* size of banner  + navbar */
-    margin-bottom: 40px; /* to leave some room above the footer */
-}
-
-
-@media only screen and (min-width: 490px) { 
+  position: relative;
+  z-index: -1;
+  /* so it scrolls under the sticky banner + navbar */
+  margin-top: 133px;
+  /* size of banner  + navbar */
+  margin-bottom: 40px;
+  /* to leave some room above the footer */
+  /* or min-width width: 100%; */ }
+  @media only screen and (min-width: 490px) {
     .body-content {
-        margin-top: 193px;
-    }
-}
+      margin-top: 193px; } }
+  .body-content a:hover {
+    color: #4f8f00; }
+  .body-content h1, .body-content h2, .body-content p, .body-content .header-img {
+    padding-left: 40px;
+    padding-right: 40px; }
+    @media only screen and (min-width: 768px) {
+      .body-content h1, .body-content h2, .body-content p, .body-content .header-img {
+        padding-left: 60px;
+        padding-right: 60px; } }
+    @media only screen and (min-width: 992px) {
+      .body-content h1, .body-content h2, .body-content p, .body-content .header-img {
+        padding-left: 100px;
+        padding-right: 100px; } }
+    @media only screen and (min-width: 1200px) {
+      .body-content h1, .body-content h2, .body-content p, .body-content .header-img {
+        padding-left: 200px;
+        padding-right: 200px; } }
 
 .hero-img {
-    width: 100%;
-    border-bottom: solid 1px #ffffff;
-    border-top: solid 3px #eeeeee;
-}
+  width: 100%;
+  border-bottom: solid 1px #ffffff;
+  border-top: solid 3px #eeeeee; }
 
 h1 {
-    font-size: 18px;
-    padding: 1em 40px 1em 40px;
-    text-align: center;
-    text-transform: uppercase; 
-}
+  font-size: 18px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  text-transform: uppercase; }
+  @media only screen and (min-width: 490px) {
+    h1 {
+      font-size: 24px; } }
+
 h2 {
-    font-size: 18px;
-    padding: 15px 40px;
-    padding: 2em 40px 0 40px;
-    color: #4f8f00; 
-}
+  font-size: 18px;
+  padding-top: 2em;
+  padding-bottom: 0;
+  color: #4f8f00; }
+  @media only screen and (min-width: 490px) {
+    h2 {
+      font-size: 20px; } }
 
 p {
-    padding: 0 40px;
-    text-align: justify;
-    line-height: 1.5;
-    font-weight: 400;
-}
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: justify;
+  line-height: 1.5;
+  font-weight: 400; }
 
-@media only screen and (min-width: 490px) {
-    h1 {
-        font-size: 24px;
-    } 
-}
-
-@media only screen and (min-width: 490px) {
-    h2 {
-        font-size: 20px;
-    } 
-}
-
-@media only screen and (min-width: 768px) { 
-    h1, h2, p {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-}
-@media only screen and (min-width: 992px) { 
-    h1, h2, p {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-}
-
-@media only screen and (min-width: 1200px) { 
-    h1, h2, p {
-        padding-left: 200px;
-        padding-right: 200px;
-    }
-}
-
-
-a {
-    color: #5a5a5a;
-    font-weight: 500;
-}
-
-a:hover {
-    color: #4f8f00;
-}
-
+.work {
+  text-transform: uppercase;
+  padding-top: 3em; }
 
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
-
 footer {
+  height: 30px;
+  width: 100%;
+  padding: 20px 0 40px 20px;
+  background-color: #373737;
+  color: #ffffff; }
+  footer .icon {
     height: 30px;
-    width: 100%;
-    padding: 20px 0 40px 20px;
-    background-color: #373737;
-    color: #ffffff;
-  }
-
-@media only screen and (min-width: 490px) {
-    footer{
-        padding: 30px 0 30px 40px;
-    }
-}
-
-.icon {
-    height: 30px;
-    width: 30px;
-}
-
-footer a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 0 3px;
-}
-footer p a:hover{
-    color: #ffffff
-}
-
-.to-right {
-    float: right;
-    padding-right: 20px;
-  }
-
+    width: 30px; }
+  footer a {
+    padding: 0 3px; }
   @media only screen and (min-width: 490px) {
-    .to-right {
-        float: right;
-        padding-right: 50px;
-      }
-} 
+    footer {
+      padding: 30px 0 30px 40px; } }
+
+/*# sourceMappingURL=myCss.css.map */
