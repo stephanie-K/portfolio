@@ -29,8 +29,15 @@ p {
   p, ul {
     font-size: 14px; } }
 /* ----------------------------------------------  Helpers  ---------------------------------------------- */
-.header-img {
+.img-mobile-screen {
+  height: 400px;
+  padding-right: 40px; }
+
+.img-half-width {
   width: 50%; }
+
+.img-full-width {
+  width: 100%; }
 
 .button {
   color: #ffffff;
@@ -146,19 +153,19 @@ p {
       margin-top: 193px; } }
   .body-content a:hover {
     color: #4f8f00; }
-  .body-content h1, .body-content h2, .body-content p, .body-content ul, .body-content .header-img {
+  .body-content h1, .body-content h2, .body-content p, .body-content ul, .body-content .img-half-width {
     padding-left: 40px;
     padding-right: 40px; }
     @media only screen and (min-width: 768px) {
-      .body-content h1, .body-content h2, .body-content p, .body-content ul, .body-content .header-img {
+      .body-content h1, .body-content h2, .body-content p, .body-content ul, .body-content .img-half-width {
         padding-left: 60px;
         padding-right: 60px; } }
     @media only screen and (min-width: 992px) {
-      .body-content h1, .body-content h2, .body-content p, .body-content ul, .body-content .header-img {
+      .body-content h1, .body-content h2, .body-content p, .body-content ul, .body-content .img-half-width {
         padding-left: 100px;
         padding-right: 100px; } }
     @media only screen and (min-width: 1200px) {
-      .body-content h1, .body-content h2, .body-content p, .body-content ul, .body-content .header-img {
+      .body-content h1, .body-content h2, .body-content p, .body-content ul, .body-content .img-half-width {
         padding-left: 200px;
         padding-right: 200px; } }
   .body-content ul {

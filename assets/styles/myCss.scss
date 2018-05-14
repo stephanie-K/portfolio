@@ -39,8 +39,16 @@ p {
 
 /* ----------------------------------------------  Helpers  ---------------------------------------------- */
 
-.header-img {
+.img-mobile-screen {
+    height: 400px;
+    padding-right: 40px;
+}
+.img-half-width {
     width: 50%;
+}
+
+.img-full-width {
+    width: 100%;
 }
 
 .button {
@@ -178,7 +186,7 @@ p {
     a:hover {
         color: #4f8f00;
     }
-    h1, h2, p, ul, .header-img {
+    h1, h2, p, ul, .img-half-width {
         padding-left: 40px;
         padding-right: 40px;
 
