@@ -18,11 +18,22 @@ a {
     font-weight: 500;
 }
 
+p {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+
 /* for very small screen */
 @media only screen and (max-width: 313px) {
-    p { 
+    p, ul { 
         font-size: 14px;
     }
+
 }
 
 /* ----------------------------------------------  Helpers  ---------------------------------------------- */
@@ -156,7 +167,7 @@ a {
     a:hover {
         color: #4f8f00;
     }
-    h1, h2, p, .header-img {
+    h1, h2, p, ul, .header-img {
         padding-left: 40px;
         padding-right: 40px;
 
@@ -172,6 +183,36 @@ a {
             padding-left: 200px;
             padding-right: 200px;
         }
+    }
+    ul {
+        line-height: 1.5;
+        padding-left: 80px;
+        @media only screen and (min-width: 768px) { 
+        padding-left:100px;
+        }
+        @media only screen and (min-width: 992px) { 
+            padding-left: 140px;
+        }
+        @media only screen and (min-width: 1200px) { 
+            padding-left: 240px;
+        }
+    }
+    .icon {
+        vertical-align: top;
+        height: 40px;
+        padding: 5px 10px 5px 0;
+    }
+    .icon-big {
+        vertical-align: top;
+        height: 80px;
+        padding: 5px 10px 5px 0;
+
+    }
+    .icon-very-big {
+        vertical-align: top;
+        height: 120px;
+        padding: 5px 10px 5px 0;
+
     }
 }
 
@@ -191,6 +232,7 @@ h1 {
         font-size: 24px;
     }
 }
+
 h2 {
     font-size: 18px;
     padding-top: 2em;
@@ -198,22 +240,15 @@ h2 {
     color: #4f8f00; 
 
     @media only screen and (min-width: 490px) {
-        font-size: 20px;
+        font-size: 24px;
     }
 }
-
-p {
-    padding-top: 0;
-    padding-bottom: 0;
-    text-align: justify;
-    line-height: 1.5;
-    font-weight: 400;
-}
-
 .work {
     text-transform: uppercase;
     padding-top: 3em;
 }
+
+
 
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
 

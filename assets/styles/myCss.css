@@ -15,9 +15,17 @@ a {
   color: #5a5a5a;
   font-weight: 500; }
 
+p {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5;
+  font-weight: 400; }
+
 /* for very small screen */
 @media only screen and (max-width: 313px) {
-  p {
+  p, ul {
     font-size: 14px; } }
 /* ----------------------------------------------  Helpers  ---------------------------------------------- */
 .header-img {
@@ -129,21 +137,45 @@ a {
       margin-top: 193px; } }
   .body-content a:hover {
     color: #4f8f00; }
-  .body-content h1, .body-content h2, .body-content p, .body-content .header-img {
+  .body-content h1, .body-content h2, .body-content p, .body-content ul, .body-content .header-img {
     padding-left: 40px;
     padding-right: 40px; }
     @media only screen and (min-width: 768px) {
-      .body-content h1, .body-content h2, .body-content p, .body-content .header-img {
+      .body-content h1, .body-content h2, .body-content p, .body-content ul, .body-content .header-img {
         padding-left: 60px;
         padding-right: 60px; } }
     @media only screen and (min-width: 992px) {
-      .body-content h1, .body-content h2, .body-content p, .body-content .header-img {
+      .body-content h1, .body-content h2, .body-content p, .body-content ul, .body-content .header-img {
         padding-left: 100px;
         padding-right: 100px; } }
     @media only screen and (min-width: 1200px) {
-      .body-content h1, .body-content h2, .body-content p, .body-content .header-img {
+      .body-content h1, .body-content h2, .body-content p, .body-content ul, .body-content .header-img {
         padding-left: 200px;
         padding-right: 200px; } }
+  .body-content ul {
+    line-height: 1.5;
+    padding-left: 80px; }
+    @media only screen and (min-width: 768px) {
+      .body-content ul {
+        padding-left: 100px; } }
+    @media only screen and (min-width: 992px) {
+      .body-content ul {
+        padding-left: 140px; } }
+    @media only screen and (min-width: 1200px) {
+      .body-content ul {
+        padding-left: 240px; } }
+  .body-content .icon {
+    vertical-align: top;
+    height: 40px;
+    padding: 5px 10px 5px 0; }
+  .body-content .icon-big {
+    vertical-align: top;
+    height: 80px;
+    padding: 5px 10px 5px 0; }
+  .body-content .icon-very-big {
+    vertical-align: top;
+    height: 120px;
+    padding: 5px 10px 5px 0; }
 
 .hero-img {
   width: 100%;
@@ -167,14 +199,7 @@ h2 {
   color: #4f8f00; }
   @media only screen and (min-width: 490px) {
     h2 {
-      font-size: 20px; } }
-
-p {
-  padding-top: 0;
-  padding-bottom: 0;
-  text-align: justify;
-  line-height: 1.5;
-  font-weight: 400; }
+      font-size: 24px; } }
 
 .work {
   text-transform: uppercase;
