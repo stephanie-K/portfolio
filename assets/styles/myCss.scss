@@ -47,27 +47,41 @@ a {
 
 /* ----------------------------------------------  Banner  ---------------------------------------------- */
 
+
 .banner {
     position: fixed;
     z-index: 1 ; /* so the body content scrolls under the sticky banner + navbar */
     top: 0;
     height: 90px;
     background-color: #4f8f00 ;
-    color: #eeeeee;
     width: 100%;
-    p {
-        text-align: center;
-    }
     img {
         display: none;
     }
+    h1, h2 {
+        font-size: 18px;
+        padding-top: 5px;
+        padding-bottom: 0;
+        text-align: center;
+    }
+    h1 { 
+        text-transform: uppercase; 
+        font-size: 18px;
+        font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+        color: #373737;
+        font-weight: 800; 
+    }
+    h2 {
+        color: #eeeeee;
+        font-weight: 400; 
+    }
     /* on small screen */
     @media only screen and (min-width: 360px) { 
-        p {
-            padding: 10px 0 0 120px;
-            text-align : left;
-            font-size: 18px;
+        h1, h2 {
             margin: 5px 0;
+            padding: 10px 0 0 120px;
+            font-size: 18px;
+            text-align : left;
         }
         img {
             float: left;
@@ -81,26 +95,17 @@ a {
 
     @media only screen and (min-width: 490px) { 
         height: 150px;
-        p {
+        h1, h2, {
             margin: 15px 0;
-            padding: 10px 0 0 200px;
-            text-align : left;
+            padding-left: 200px;
             font-size: 22px;
         }
         img {
             margin-top: 15px;
-            float: left;
             height: 130px;
             width : 130px;
         }
     }
-}
-
-.name {
-    text-transform: uppercase; 
-    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
-    color: #373737;
-    font-weight: 800;
 }
 
 /* ----------------------------------------------  Navbar  ---------------------------------------------- */
