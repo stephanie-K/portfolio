@@ -13,7 +13,8 @@ body {
 
 a {
   color: #5a5a5a;
-  font-weight: 500; }
+  font-weight: 500;
+  text-decoration: underline #aaaaaa; }
 
 p {
   padding-top: 0;
@@ -118,6 +119,7 @@ p {
         font-size: 14px; } }
     @media only screen and (min-width: 490px) {
       .navbar a {
+        font-size: 20px;
         padding: 10px 30px; } }
   .navbar a:hover {
     border-bottom: solid 3px #4f8f00; }
