@@ -45,6 +45,13 @@ p {
   padding: 5px 10px;
   border: solid 2px #4f8f00; }
 
+.warning {
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #C30918;
+  padding: 10px 15px;
+  font-weight: 600; }
+
 /* ----------------------------------------------  Banner  ---------------------------------------------- */
 .banner {
   position: fixed;
