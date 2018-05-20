@@ -34,53 +34,15 @@ p {
     font-size: 18px;
 }
 
-
 /* for very small screen */
 @media only screen and (max-width: 313px) {
     p, ul { 
         font-size: 14px;
     }
-
 }
 
-/* ----------------------------------------------  Helpers  ---------------------------------------------- */
-
-.img-mobile-screen {
-    height: 400px;
-    padding-right: 40px;
-}
-.img-half-width {
-    width: 50%;
-}
-
-.img-full-width {
-    width: 100%;
-}
-
-.button {
-    color : #ffffff;
-    text-transform: uppercase;
-    background-color: #4f8f00;
-    padding: 10px 12px;
-    text-decoration: none;
-}
-.button:hover {
-    color: #4f8f00;
-    background-color: #ffffff;
-    padding: 8px 10px;
-    border: solid 2px #4f8f00;
-}
-
-.warning  {
-    color : #ffffff;
-    text-transform: uppercase;
-    background-color: #C30918;
-    padding: 10px 15px;
-    font-weight: 600;
-}
 
 /* ----------------------------------------------  Banner  ---------------------------------------------- */
-
 
 .banner {
     position: fixed;
@@ -100,7 +62,6 @@ p {
     }
     h1 { 
         text-transform: uppercase; 
-        font-size: 18px;
         font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
         color: #373737;
         font-weight: 800; 
@@ -142,7 +103,9 @@ p {
     }
 }
 
+
 /* ----------------------------------------------  Navbar  ---------------------------------------------- */
+
 .navbar {
     position: fixed;
     z-index: 1 ; /* so the body content scrolls under the sticky banner + navbar */
@@ -188,27 +151,10 @@ p {
 
 /* ----------------------------------------------  Body of a page  ---------------------------------------------- */
 
-/*  à avoir 
-::selection {/
-    background: #fffac4;
-    color: #111;
-    text-shadow: none;
-}
-.inner {
-    margin: 0 auto;
-    max-width: 740px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
- */ 
-
-
 .body-content {
     position: relative;
     margin-top: 131px; /* size of banner  + navbar */
     margin-bottom: 40px; /* to leave some room above the footer */
-
     @media only screen and (min-width: 490px) { 
         margin-top: 193px;
     }
@@ -216,36 +162,36 @@ p {
     a:hover {
         color: #4f8f00;
     }
-    h1, h2, p, ul, .img-half-width {
-        padding-left: 40px;
-        padding-right: 40px;
 
-        @media only screen and (min-width: 768px) { 
-        padding-left: 60px;
-        padding-right: 60px;
-        }
-        @media only screen and (min-width: 992px) { 
-            padding-left: 100px;
-            padding-right: 100px;
-        }
-        @media only screen and (min-width: 1200px) { 
-            padding-left: 200px;
-            padding-right: 200px;
+    // this is to avoid the line of text to be too long to read on big screens. Max 740px and same white space on both side of it
+    p, h1, h2, p, ul {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 740px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+        padding-top: 2em;
+        color: #4f8f00; 
+        @media only screen and (min-width: 490px) {
+            font-size: 24px;
         }
     }
+
     ul {
         line-height: 1.5;
-        padding-left: 80px;
+        padding-left: 60px;
         @media only screen and (min-width: 768px) { 
-        padding-left:100px;
+            padding-left: 90px;
         }
         @media only screen and (min-width: 992px) { 
-            padding-left: 140px;
-        }
-        @media only screen and (min-width: 1200px) { 
-            padding-left: 240px;
+            padding-left: 120px; 
         }
     }
+
     .icon {
         vertical-align: top;
         height: 40px;
@@ -263,6 +209,10 @@ p {
         padding: 5px 10px 5px 0;
 
     }
+    ::selection {
+        background: #cae0af;
+        color: #1a1a1a;
+    }
 }
 
 .hero-img {
@@ -270,23 +220,12 @@ p {
     border-bottom: solid 1px #ffffff;
 }
 
-h1, h2 {
-    font-size: 20px;
-    padding-top: 2em;
-    padding-bottom: 0;
-    color: #4f8f00; 
-
-    @media only screen and (min-width: 490px) {
-        font-size: 24px;
-    }
-}
 .work {
     text-transform: uppercase;
     padding-top: 3em;
     color: #5a5a5a; 
 
 }
-
 
 
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
@@ -317,5 +256,44 @@ footer {
     } 
 }
 
+/* ----------------------------------------------  Helpers  ---------------------------------------------- */
+
+.img-mobile-screen {
+    height: 400px;
+    padding-right: 40px;
+}
+.img-half-width {
+    width: 50%;
+}
+
+.img-full-width {
+    width: 100%;
+}
+
+.button {
+    color : #ffffff;
+    text-transform: uppercase;
+    background-color: #4f8f00;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+.button:hover {
+    color: #4f8f00;
+    background-color: #ffffff;
+    padding: 8px 10px;
+    border: solid 2px #4f8f00;
+}
+
+.warning  {
+    color : #ffffff;
+    text-transform: uppercase;
+    background-color: #C30918;
+    padding: 10px 15px;
+    font-weight: 600;
+}
+
+.margin-top-1 {
+    margin-top: 1em;
+}
 
 
