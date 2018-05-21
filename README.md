@@ -5,7 +5,7 @@ Using only CSS with SASS - No Javascript for now -
 Accessible and responsive
 
 Can be visited here: 
-stephanie.chezleskrus.com/index.html
+https://stephanie.chezleskrus.com/index.html
 
 ---
 
