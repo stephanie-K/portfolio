@@ -232,10 +232,10 @@ footer {
 
 .warning {
   color: #ffffff;
-  text-transform: uppercase;
   background-color: #C30918;
-  padding: 10px 15px;
-  font-weight: 600; }
+  padding: 2px 4px;
+  font-weight: 400;
+  margin-right: 8px; }
 
 .margin-top-1 {
   margin-top: 1em; }
