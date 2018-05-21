@@ -13,4 +13,4 @@ stephanie.chezleskrus.com/index.html
 - reassess the accessibility and improve it 
 - have a web form alternative to the PDF CV
 - enhance with Javascript?
-- improve with CSS transition?
+- improve with CSS transitions?
