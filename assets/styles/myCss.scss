@@ -171,6 +171,8 @@ p {
         max-width: 740px;
         padding-left: 30px;
         padding-right: 30px;
+        // avoid difference of spacing between words while reading which can be a strain on the eye
+        text-align: left;
     }
 
     h1, h2 {
@@ -301,6 +303,9 @@ footer {
 
 .margin-top-1 {
     margin-top: 1em;
+}
+.margin-top-2 {
+    margin-top: 2em;
 }
 
 

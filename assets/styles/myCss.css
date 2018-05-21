@@ -138,7 +138,8 @@ p {
     margin-right: auto;
     max-width: 740px;
     padding-left: 30px;
-    padding-right: 30px; }
+    padding-right: 30px;
+    text-align: left; }
   .body-content h1, .body-content h2 {
     font-size: 22px;
     padding-top: 2em;
@@ -238,5 +239,8 @@ footer {
 
 .margin-top-1 {
   margin-top: 1em; }
+
+.margin-top-2 {
+  margin-top: 2em; }
 
 /*# sourceMappingURL=myCss.css.map */
