@@ -129,7 +129,8 @@ p {
   /* to leave some room above the footer */ }
   @media only screen and (min-width: 490px) {
     .body-content {
-      margin-top: 193px; } }
+      margin-top: 193px;
+      font-size: 18px; } }
   .body-content a:hover {
     color: #4f8f00; }
   .body-content p, .body-content h1, .body-content h2, .body-content p, .body-content ul {
@@ -139,12 +140,15 @@ p {
     padding-left: 30px;
     padding-right: 30px; }
   .body-content h1, .body-content h2 {
-    font-size: 20px;
+    font-size: 22px;
     padding-top: 2em;
     color: #4f8f00; }
     @media only screen and (min-width: 490px) {
       .body-content h1, .body-content h2 {
-        font-size: 24px; } }
+        font-size: 26px; } }
+  @media only screen and (min-width: 490px) {
+    .body-content p {
+      font-size: 18px; } }
   .body-content ul {
     line-height: 1.5;
     padding-left: 60px; }
