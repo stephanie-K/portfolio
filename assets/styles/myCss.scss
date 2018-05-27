@@ -361,8 +361,15 @@ p {
     }
     @media only screen and (min-width: 850px) {
         width: 250px;
-        margin: 0 0 40px 60px;
+        margin: 0 20px 40px 60px;
     }
+    @media only screen and (min-width: 1024px) { // extra margin in between from now on
+        margin: 0 60px 40px 60px;
+    }
+    @media only screen and (min-width: 1200px) { 
+        margin: 0 100px 40px 60px;
+    }
+
 }
 
 .education-work {

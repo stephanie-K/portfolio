@@ -10,6 +10,5 @@ https://stephanie.chezleskrus.com/index.html
 ---
 
 **Next steps**
-- reassess the accessibility and improve it 
 - enhance with Javascript?
 - improve with CSS transitions?
