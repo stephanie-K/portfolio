@@ -11,6 +11,5 @@ https://stephanie.chezleskrus.com/index.html
 
 **Next steps**
 - reassess the accessibility and improve it 
-- have a web form alternative to the PDF CV
 - enhance with Javascript?
 - improve with CSS transitions?

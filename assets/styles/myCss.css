@@ -32,7 +32,10 @@ p {
 /* for very small screen */
 @media only screen and (max-width: 313px) {
   p, ul {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .cv-contact {
+    width: 300px; } }
 /* ----------------------------------------------  Banner  ---------------------------------------------- */
 .banner {
   position: fixed;
@@ -133,7 +136,7 @@ p {
       font-size: 18px; } }
   .body-content a:hover {
     color: #4f8f00; }
-  .body-content p, .body-content h1, .body-content h2, .body-content p, .body-content ul {
+  .body-content p, .body-content h1, .body-content h2, .body-content ul {
     margin-left: auto;
     margin-right: auto;
     max-width: 740px;
@@ -184,6 +187,143 @@ p {
   padding-top: 3em;
   color: #5a5a5a; }
 
+/* ----------------------------------------------  For the CV  ---------------------------------------------- */
+.cv {
+  position: relative;
+  margin-bottom: 40px;
+  /* to leave some room above the footer */ }
+  .cv p, .cv h1, .cv h2 {
+    text-align: left; }
+  .cv h1 {
+    font-size: 22px;
+    padding-top: 1.5em;
+    color: #4f8f00; }
+    @media only screen and (min-width: 490px) {
+      .cv h1 {
+        font-size: 26px; } }
+  .cv h2 {
+    font-size: 18px;
+    padding-top: 0.5em;
+    margin-bottom: 0;
+    color: #1a1a1a;
+    font-weight: 600; }
+    @media only screen and (min-width: 490px) {
+      .cv h2 {
+        font-size: 20px; } }
+  .cv p {
+    font-size: 14px;
+    margin: 0; }
+    @media only screen and (min-width: 490px) {
+      .cv p {
+        font-size: 16px; } }
+  .cv .icon {
+    vertical-align: bottom;
+    height: 30px;
+    width: 30px; }
+  .cv .cv-name {
+    display: none;
+    min-width: 400px;
+    margin-left: 30px;
+    margin-bottom: 40px; }
+    .cv .cv-name h1 {
+      font-size: 26px;
+      margin-bottom: 0; }
+      @media only screen and (min-width: 850px) {
+        .cv .cv-name h1 {
+          font-size: 30px; } }
+    .cv .cv-name h2 {
+      font-family: 'Roboto Bold Condensed','Roboto',Helvetica,Arial,sans-serif;
+      font-size: 22px;
+      margin-bottom: 0;
+      font-weight: 700;
+      margin: 0; }
+      @media only screen and (min-width: 850px) {
+        .cv .cv-name h2 {
+          font-size: 26px; } }
+    @media only screen and (min-width: 630px) {
+      .cv .cv-name {
+        display: block; } }
+    @media only screen and (min-width: 850px) {
+      .cv .cv-name {
+        margin-left: 60px; } }
+  .cv .cv-contact {
+    margin: 20px;
+    max-width: 1024px;
+    padding: 10px 0 10px 20px;
+    border-left: solid 2px #4f8f00;
+    font-weight: 500; }
+    .cv .cv-contact a:hover {
+      color: #4f8f00; }
+    .cv .cv-contact a.inverted {
+      color: #4f8f00;
+      text-decoration: none; }
+    .cv .cv-contact a.inverted:hover {
+      color: #5a5a5a; }
+    .cv .cv-contact p {
+      font-family: 'Roboto Bold Condensed','Roboto',Helvetica,Arial,sans-serif;
+      font-size: 16px;
+      font-weight: 700; }
+      @media only screen and (min-width: 850px) {
+        .cv .cv-contact p {
+          font-size: 20px; } }
+    @media only screen and (min-width: 630px) {
+      .cv .cv-contact {
+        float: right; } }
+    @media only screen and (min-width: 850px) {
+      .cv .cv-contact {
+        margin: 40px; } }
+
+.cv-banner {
+  display: block; }
+  @media only screen and (min-width: 630px) {
+    .cv-banner {
+      display: none; } }
+
+.skills {
+  margin: 0  0 30px 10px; }
+  @media only screen and (max-width: 364px) {
+    .skills {
+      margin: 0 15px 30px 15px; } }
+  @media only screen and (min-width: 365px) {
+    .skills {
+      float: left;
+      width: 160px; } }
+  @media only screen and (min-width: 490px) {
+    .skills {
+      width: 220px;
+      margin: 0 0 40px 30px; } }
+  @media only screen and (min-width: 850px) {
+    .skills {
+      width: 250px;
+      margin: 0 0 40px 60px; } }
+
+.education-work {
+  max-width: 1024px;
+  margin-right: 15px; }
+  .education-work a {
+    color: #4f8f00; }
+  .education-work a:hover {
+    color: #5a5a5a; }
+  @media only screen and (max-width: 364px) {
+    .education-work {
+      margin: 0 15px 30px 15px; } }
+  @media only screen and (min-width: 365px) {
+    .education-work {
+      padding-left: 175px; } }
+  @media only screen and (min-width: 490px) {
+    .education-work {
+      margin-right: 30px;
+      padding-left: 250px; } }
+  @media only screen and (min-width: 850px) {
+    .education-work {
+      margin-right: 40px;
+      padding-left: 310px; } }
+
+p.date {
+  font-family: 'Roboto Bold Condensed','Roboto',Helvetica,Arial,sans-serif;
+  color: #888888;
+  font-weight: 700; }
+
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
 footer {
   height: 30px;
@@ -205,6 +345,11 @@ footer {
   @media only screen and (min-width: 490px) {
     .to-right {
       margin-right: 40px; } }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
 
 /* ----------------------------------------------  Helpers  ---------------------------------------------- */
 .img-mobile-screen {
@@ -229,12 +374,18 @@ footer {
   background-color: #4f8f00;
   padding: 10px 12px;
   text-decoration: none; }
+  .button ::selection {
+    background: #ffffff;
+    color: #5a5a5a; }
 
 .button:hover {
   color: #4f8f00;
   background-color: #ffffff;
   padding: 8px 10px;
   border: solid 2px #4f8f00; }
+  .button:hover ::selection {
+    background: #ffffff;
+    color: #5a5a5a; }
 
 .warning {
   color: #ffffff;
