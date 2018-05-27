@@ -298,8 +298,9 @@ p {
       margin: 0 0 40px 60px; } }
 
 .education-work {
-  max-width: 1024px;
-  margin-right: 15px; }
+  max-width: 750px;
+  margin-right: 15px;
+  margin-left: 15px; }
   .education-work a {
     color: #4f8f00; }
   .education-work a:hover {
