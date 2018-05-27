@@ -366,7 +366,7 @@ p {
 }
 
 .education-work {
-    max-width: 750px;
+    max-width: 750px; // to avoid the line to be too long on big screens
     margin-right: 15px;
     margin-left:15px;
     a {
