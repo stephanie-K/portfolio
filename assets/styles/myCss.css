@@ -114,7 +114,7 @@ nav {
         font-size: 20px;
         height: 20px;
         padding: 10px 30px; } }
-  nav a:hover {
+  nav a:hover, nav a:focus {
     border-bottom: solid 4px #4f8f00; }
   nav .on-the-page {
     color: #4f8f00;
@@ -134,7 +134,7 @@ main {
     main {
       margin-top: 193px;
       font-size: 18px; } }
-  main a:hover {
+  main a:hover, main a:focus {
     color: #4f8f00; }
   main p, main h1, main h2, main ul {
     margin-left: auto;
@@ -252,12 +252,12 @@ main {
     padding: 10px 0 10px 20px;
     border-left: solid 2px #4f8f00;
     font-weight: 500; }
-    .cv .cv-contact a:hover {
+    .cv .cv-contact a:hover, .cv .cv-contact a:focus {
       color: #4f8f00; }
     .cv .cv-contact a.inverted {
       color: #4f8f00;
       text-decoration: none; }
-    .cv .cv-contact a.inverted:hover {
+    .cv .cv-contact a.inverted:hover, .cv .cv-contact a.inverted:focus {
       color: #5a5a5a; }
     .cv .cv-contact p {
       font-family: 'Roboto Bold Condensed','Roboto',Helvetica,Arial,sans-serif;
@@ -309,7 +309,7 @@ main {
   margin-left: 15px; }
   .education-work a {
     color: #4f8f00; }
-  .education-work a:hover {
+  .education-work a:hover, .education-work a:focus {
     color: #5a5a5a; }
   @media only screen and (max-width: 364px) {
     .education-work {

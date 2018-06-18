@@ -137,7 +137,7 @@ nav {
             padding: 10px 30px;
         }
     }
-    a:hover {
+    a:hover, a:focus {
         border-bottom: solid 4px #4f8f00;
     }
 
@@ -163,7 +163,7 @@ main {
         font-size: 18px;
     }
 
-    a:hover {
+    a:hover, a:focus {
         color: #4f8f00;
     }
 
@@ -313,14 +313,14 @@ main {
         padding: 10px 0 10px 20px;
         border-left: solid 2px #4f8f00; 
         font-weight: 500;
-        a:hover {
+        a:hover, a:focus {
             color: #4f8f00;
         }
         a.inverted {
             color: #4f8f00;
             text-decoration: none;
         }
-        a.inverted:hover {
+        a.inverted:hover,  a.inverted:focus {
             color: #5a5a5a;
         }
         p {
@@ -379,7 +379,7 @@ main {
     a {
         color: #4f8f00;
     }
-    a:hover {
+    a:hover, a:focus {
         color: #5a5a5a;
     }
     @media only screen and (max-width: 364px) { // for small screens, only one column
