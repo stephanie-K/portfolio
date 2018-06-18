@@ -457,7 +457,7 @@ footer {
     width: 100%;
 }
 
-.button {
+button{ 
     color : #ffffff;
     text-transform: uppercase;
     background-color: #4f8f00;
@@ -467,8 +467,12 @@ footer {
         background: #ffffff;
         color: #5a5a5a;
     }
+    font-size: 16px;
+    @media only screen and (min-width: 490px) {
+        font-size: 18px;
+    }
 }
-.button:hover {
+button:hover {
     color: #4f8f00;
     background-color: #ffffff;
     padding: 8px 10px;

@@ -375,22 +375,26 @@ footer {
 .img-full-width {
   width: 100%; }
 
-.button {
+button {
   color: #ffffff;
   text-transform: uppercase;
   background-color: #4f8f00;
   padding: 10px 12px;
-  text-decoration: none; }
-  .button ::selection {
+  text-decoration: none;
+  font-size: 16px; }
+  button ::selection {
     background: #ffffff;
     color: #5a5a5a; }
+  @media only screen and (min-width: 490px) {
+    button {
+      font-size: 18px; } }
 
-.button:hover {
+button:hover {
   color: #4f8f00;
   background-color: #ffffff;
   padding: 8px 10px;
   border: solid 2px #4f8f00; }
-  .button:hover ::selection {
+  button:hover ::selection {
     background: #ffffff;
     color: #5a5a5a; }
 
