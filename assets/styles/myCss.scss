@@ -47,7 +47,7 @@ p {
 
 /* ----------------------------------------------  Banner  ---------------------------------------------- */
 
-.banner {
+header {
     position: fixed;
     z-index: 1 ; /* so the body content scrolls under the sticky banner + navbar */
     top: 0;
@@ -109,7 +109,7 @@ p {
 
 /* ----------------------------------------------  Navbar  ---------------------------------------------- */
 
-.navbar {
+nav {
     position: fixed;
     z-index: 1 ; /* so the body content scrolls under the sticky banner + navbar */
     width: 100%;
@@ -154,7 +154,7 @@ p {
 
 /* ----------------------------------------------  Body of a page  ---------------------------------------------- */
 
-.body-content {
+main {
     position: relative;
     margin-top: 131px; /* size of banner  + navbar */
     margin-bottom: 40px; /* to leave some room above the footer */

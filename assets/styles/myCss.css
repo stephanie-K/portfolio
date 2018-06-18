@@ -37,7 +37,7 @@ p {
   .cv-contact {
     width: 300px; } }
 /* ----------------------------------------------  Banner  ---------------------------------------------- */
-.banner {
+header {
   position: fixed;
   z-index: 1;
   /* so the body content scrolls under the sticky banner + navbar */
@@ -46,28 +46,28 @@ p {
   background-color: #4f8f00;
   width: 100%;
   /* on small screen */ }
-  .banner img {
+  header img {
     display: none; }
-  .banner h1, .banner h2 {
+  header h1, header h2 {
     font-size: 18px;
     padding-top: 5px;
     padding-bottom: 0;
     text-align: center; }
-  .banner h1 {
+  header h1 {
     text-transform: uppercase;
     font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
     color: #373737;
     font-weight: 800; }
-  .banner h2 {
+  header h2 {
     color: #eeeeee;
     font-weight: 400; }
   @media only screen and (min-width: 360px) {
-    .banner h1, .banner h2 {
+    header h1, header h2 {
       margin: 5px 0;
       padding: 10px 0 0 120px;
       font-size: 18px;
       text-align: left; }
-    .banner img {
+    header img {
       float: left;
       display: block;
       margin-top: 10px;
@@ -75,19 +75,19 @@ p {
       height: 80px;
       width: 80px; } }
   @media only screen and (min-width: 490px) {
-    .banner {
+    header {
       height: 150px; }
-      .banner h1, .banner h2 {
+      header h1, header h2 {
         margin: 15px 0;
         padding-left: 200px;
         font-size: 22px; }
-      .banner img {
+      header img {
         margin-top: 15px;
         height: 130px;
         width: 130px; } }
 
 /* ----------------------------------------------  Navbar  ---------------------------------------------- */
-.navbar {
+nav {
   position: fixed;
   z-index: 1;
   /* so the body content scrolls under the sticky banner + navbar */
@@ -96,7 +96,7 @@ p {
   height: 40px;
   background-color: #e3e3e3;
   border-bottom: solid 4px #e3e3e3; }
-  .navbar a {
+  nav a {
     float: left;
     display: block;
     text-align: center;
@@ -107,74 +107,74 @@ p {
     padding: 12px 20px;
     /* for very small screen */ }
     @media only screen and (max-width: 313px) {
-      .navbar a {
+      nav a {
         padding: 12px 10px; } }
     @media only screen and (min-width: 490px) {
-      .navbar a {
+      nav a {
         font-size: 20px;
         height: 20px;
         padding: 10px 30px; } }
-  .navbar a:hover {
+  nav a:hover {
     border-bottom: solid 4px #4f8f00; }
-  .navbar .on-the-page {
+  nav .on-the-page {
     color: #4f8f00;
     font-weight: 500; }
   @media only screen and (min-width: 490px) {
-    .navbar {
+    nav {
       top: 150px; } }
 
 /* ----------------------------------------------  Body of a page  ---------------------------------------------- */
-.body-content {
+main {
   position: relative;
   margin-top: 131px;
   /* size of banner  + navbar */
   margin-bottom: 40px;
   /* to leave some room above the footer */ }
   @media only screen and (min-width: 490px) {
-    .body-content {
+    main {
       margin-top: 193px;
       font-size: 18px; } }
-  .body-content a:hover {
+  main a:hover {
     color: #4f8f00; }
-  .body-content p, .body-content h1, .body-content h2, .body-content ul {
+  main p, main h1, main h2, main ul {
     margin-left: auto;
     margin-right: auto;
     max-width: 740px;
     padding-left: 30px;
     padding-right: 30px;
     text-align: left; }
-  .body-content h1, .body-content h2 {
+  main h1, main h2 {
     font-size: 22px;
     padding-top: 2em;
     color: #4f8f00; }
     @media only screen and (min-width: 490px) {
-      .body-content h1, .body-content h2 {
+      main h1, main h2 {
         font-size: 26px; } }
   @media only screen and (min-width: 490px) {
-    .body-content p {
+    main p {
       font-size: 18px; } }
-  .body-content ul {
+  main ul {
     line-height: 1.5;
     padding-left: 60px; }
     @media only screen and (min-width: 768px) {
-      .body-content ul {
+      main ul {
         padding-left: 90px; } }
     @media only screen and (min-width: 992px) {
-      .body-content ul {
+      main ul {
         padding-left: 120px; } }
-  .body-content .icon {
+  main .icon {
     vertical-align: top;
     height: 40px;
     padding: 5px 10px 5px 0; }
-  .body-content .icon-big {
+  main .icon-big {
     vertical-align: top;
     height: 80px;
     padding: 5px 10px 5px 0; }
-  .body-content .icon-very-big {
+  main .icon-very-big {
     vertical-align: top;
     height: 120px;
     padding: 5px 10px 5px 0; }
-  .body-content ::selection {
+  main ::selection {
     background: #cae0af;
     color: #1a1a1a; }
 
