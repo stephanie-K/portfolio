@@ -277,6 +277,10 @@ main {
         vertical-align: bottom;
         height: 30px;
         width: 30px;
+        @media only screen and (max-width: 325px){
+            height: 22px;
+            width: 22px;
+        }
     }
     .cv-name {
         display: none;
@@ -286,7 +290,8 @@ main {
         h1 {
             font-size: 26px;
             margin-bottom: 0;
-            @media only screen and (min-width: 850px) {
+            text-align:right;
+            @media only screen and (min-width: 855px) {
                 font-size: 30px;
             }
         }
@@ -295,16 +300,14 @@ main {
             font-size: 22px;
             margin-bottom: 0;
             font-weight: 700;
+            text-align:right;
             margin: 0;
-            @media only screen and (min-width: 850px) {
-                font-size: 26px;
+            @media only screen and (min-width: 855px) {
+                font-size: 24px;
             }
         }
-        @media only screen and (min-width: 630px) {
+        @media only screen and (min-width: 735px) {
             display: block;
-        }
-        @media only screen and (min-width: 850px) {
-            margin-left: 60px;
         }
     }
     .cv-contact {
@@ -327,39 +330,39 @@ main {
             font-family: 'Roboto Bold Condensed','Roboto',Helvetica,Arial,sans-serif;
             font-size: 16px;
             font-weight: 700;
-            @media only screen and (min-width: 850px) {
+            @media only screen and (min-width: 855px) {
                 font-size: 20px;
             }
+            @media only screen and (max-width: 390px) {
+                padding: 10px 5px;
+            }
         }
-        @media only screen and (min-width: 630px) {
+        @media only screen and (min-width: 735px) {
             float: right;
         }
-        @media only screen and (min-width: 850px) {
+        @media only screen and (min-width: 855px) {
             margin: 40px;
+        }
+        @media only screen and (max-width: 390px) {
+            padding: 10px 5px;
         }
     }
 }
 .cv-banner {
     display: block;
-    @media only screen and (min-width: 630px) {
+    @media only screen and (min-width: 735px) {
         display: none;
     }
 }
 
 .skills {
     margin: 0  0 30px 10px;
+    min-height: 100%;
     @media only screen and (max-width: 364px) { // for small screens, only one column
         margin: 0 15px 30px 15px;
     }
-    @media only screen and (min-width: 365px) {
-        float: left;   
-        width: 160px;
-    }
-    @media only screen and (min-width: 490px) {
-        width: 220px;
-        margin: 0 0 40px 30px;
-    }
-    @media only screen and (min-width: 850px) {
+    @media only screen and (min-width: 735px) {
+        float: left; 
         width: 250px;
         margin: 0 20px 40px 60px;
     }
@@ -386,13 +389,13 @@ main {
         margin: 0 15px 30px 15px;
     }
     @media only screen and (min-width: 365px) {
-        padding-left: 175px; 
+        //padding-left: 175px; 
     }
     @media only screen and (min-width: 490px) {
         margin-right: 30px;
-        padding-left: 250px;
+        //padding-left: 250px;
     }
-    @media only screen and (min-width: 850px) {
+    @media only screen and (min-width: 735px) {
         margin-right: 40px;
         padding-left: 310px;
     }
@@ -402,6 +405,10 @@ p.date {
     font-family: 'Roboto Bold Condensed','Roboto',Helvetica,Arial,sans-serif;
     color: #888888;
     font-weight: 700;
+}
+.cv-highlight {
+    color:#4f8f00;;
+    font-weight: 500;
 }
 
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
