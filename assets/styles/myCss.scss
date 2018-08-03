@@ -357,7 +357,6 @@ main {
 
 .skills {
     margin: 0  0 30px 10px;
-    min-height: 100%;
     @media only screen and (max-width: 364px) { // for small screens, only one column
         margin: 0 15px 30px 15px;
     }
@@ -366,12 +365,12 @@ main {
         width: 250px;
         margin: 0 20px 40px 60px;
     }
-    @media only screen and (min-width: 1024px) { // extra margin in between from now on
-        margin: 0 60px 40px 60px;
-    }
-    @media only screen and (min-width: 1200px) { 
-        margin: 0 100px 40px 60px;
-    }
+    //@media only screen and (min-width: 1024px) { // extra margin in between from now on
+    //    margin: 0 60px 40px 60px;
+   // }
+    //@media only screen and (min-width: 1200px) { 
+     //   margin: 0 100px 40px 60px;
+   // }
 
 }
 

@@ -289,8 +289,7 @@ main {
       display: none; } }
 
 .skills {
-  margin: 0  0 30px 10px;
-  min-height: 100%; }
+  margin: 0  0 30px 10px; }
   @media only screen and (max-width: 364px) {
     .skills {
       margin: 0 15px 30px 15px; } }
@@ -299,12 +298,6 @@ main {
       float: left;
       width: 250px;
       margin: 0 20px 40px 60px; } }
-  @media only screen and (min-width: 1024px) {
-    .skills {
-      margin: 0 60px 40px 60px; } }
-  @media only screen and (min-width: 1200px) {
-    .skills {
-      margin: 0 100px 40px 60px; } }
 
 .education-work {
   max-width: 750px;
