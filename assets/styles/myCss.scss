@@ -365,13 +365,9 @@ main {
         width: 250px;
         margin: 0 20px 40px 60px;
     }
-    //@media only screen and (min-width: 1024px) { // extra margin in between from now on
-    //    margin: 0 60px 40px 60px;
-   // }
-    //@media only screen and (min-width: 1200px) { 
-     //   margin: 0 100px 40px 60px;
-   // }
-
+    @media only screen and (min-width: 855px) { // extra margin in between from now on
+        width: 275px
+    }
 }
 
 .education-work {
@@ -397,6 +393,9 @@ main {
     @media only screen and (min-width: 735px) {
         margin-right: 40px;
         padding-left: 310px;
+    }
+    @media only screen and (min-width: 855px) {
+        padding-left: 335px;
     }
 }
 

@@ -298,6 +298,9 @@ main {
       float: left;
       width: 250px;
       margin: 0 20px 40px 60px; } }
+  @media only screen and (min-width: 855px) {
+    .skills {
+      width: 275px; } }
 
 .education-work {
   max-width: 750px;
@@ -317,6 +320,9 @@ main {
     .education-work {
       margin-right: 40px;
       padding-left: 310px; } }
+  @media only screen and (min-width: 855px) {
+    .education-work {
+      padding-left: 335px; } }
 
 p.date {
   font-family: 'Roboto Bold Condensed','Roboto',Helvetica,Arial,sans-serif;
