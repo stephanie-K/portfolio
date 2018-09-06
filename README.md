@@ -10,5 +10,6 @@ https://stephanie.chezleskrus.com/index.html
 ---
 
 **Next steps**
+- review accesibility, ARIA and more and test with screen-reader 
 - enhance with Javascript?
 - improve with CSS transitions?
