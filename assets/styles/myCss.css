@@ -16,6 +16,9 @@ a {
   font-weight: 500;
   text-decoration: underline #aaaaaa; }
 
+h1, h2 {
+  font-family: Montserrat, 'Roboto Condensed', Helvetica, Arial, sans-serif; }
+
 p {
   padding-top: 0;
   padding-bottom: 0;
@@ -23,11 +26,6 @@ p {
   text-align: justify;
   line-height: 1.5;
   font-weight: 400; }
-
-.lead {
-  padding-top: 4em;
-  font-weight: 600;
-  font-size: 18px; }
 
 /* for very small screen */
 @media only screen and (max-width: 313px) {
@@ -55,17 +53,15 @@ header {
     text-align: center; }
   header h1 {
     text-transform: uppercase;
-    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
     color: #1a1a1a;
     font-weight: 800; }
   header h2 {
-    color: #eeeeee;
+    color: white;
     font-weight: 400; }
   @media only screen and (min-width: 360px) {
     header h1, header h2 {
       margin: 5px 0;
       padding: 10px 0 0 120px;
-      font-size: 18px;
       text-align: left; }
     header img {
       float: left;
@@ -81,6 +77,8 @@ header {
         margin: 15px 0;
         padding-left: 200px;
         font-size: 22px; }
+      header h1 {
+        font-size: 26px; }
       header img {
         margin-top: 15px;
         height: 130px;
@@ -101,7 +99,8 @@ nav {
     display: block;
     text-align: center;
     color: #373737;
-    font-weight: 400;
+    font-weight: 500;
+    font-family: Montserrat, 'Roboto Condensed', Helvetica, Arial, sans-serif;
     text-decoration: none;
     height: 16px;
     padding: 12px 20px;
@@ -117,8 +116,9 @@ nav {
   nav a:hover, nav a:focus {
     border-bottom: solid 4px #4f8f00; }
   nav .on-the-page {
-    color: #4f8f00;
-    font-weight: 500; }
+    color: #e3e3e3;
+    background-color: #373737;
+    border-bottom: solid 4px #373737; }
   @media only screen and (min-width: 490px) {
     nav {
       top: 150px; } }
@@ -153,6 +153,14 @@ main {
   @media only screen and (min-width: 490px) {
     main p {
       font-size: 18px; } }
+  main .lead {
+    font-family: Montserrat, 'Roboto Condensed', Helvetica, Arial, sans-serif;
+    padding-top: 4em;
+    font-weight: 600;
+    font-size: 18px; }
+    @media only screen and (min-width: 490px) {
+      main .lead {
+        font-size: 20px; } }
   main ul {
     line-height: 1.5;
     padding-left: 60px; }
