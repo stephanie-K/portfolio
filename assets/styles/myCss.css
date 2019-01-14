@@ -370,23 +370,28 @@ footer {
 
 /* ----------------------------------------------  Helpers  ---------------------------------------------- */
 .img-mobile-screen {
+  vertical-align: top;
   height: 400px;
   padding-right: 40px; }
 
 .img-one-quarter-width {
+  vertical-align: top;
   width: 24%; }
 
 .img-half-width {
+  vertical-align: top;
   width: 49%; }
 
 .img-three-quarters-width {
+  vertical-align: top;
   width: 74%; }
 
 .img-full-width {
+  vertical-align: top;
   width: 100%; }
 
 .with-border {
-  border: solid 2px #e3e3e3; }
+  border: solid 1px #d0e3ff; }
 
 button {
   color: #ffffff;
