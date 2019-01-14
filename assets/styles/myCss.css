@@ -374,16 +374,19 @@ footer {
   padding-right: 40px; }
 
 .img-one-quarter-width {
-  width: 25%; }
+  width: 24%; }
 
 .img-half-width {
-  width: 50%; }
+  width: 49%; }
 
 .img-three-quarters-width {
-  width: 75%; }
+  width: 74%; }
 
 .img-full-width {
   width: 100%; }
+
+.with-border {
+  border: solid 2px #e3e3e3; }
 
 button {
   color: #ffffff;
@@ -411,7 +414,7 @@ button:hover {
 .warning {
   color: #ffffff;
   background-color: #C30918;
-  padding: 2px 4px;
+  padding: 6px 8px;
   font-weight: 400;
   margin-right: 8px; }
 
