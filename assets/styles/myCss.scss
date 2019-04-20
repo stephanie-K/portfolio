@@ -92,7 +92,7 @@ header {
 
     @media only screen and (min-width: 490px) { 
         height: 150px;
-        h1, h2, {
+        h1, h2 {
             margin: 15px 0;
             padding-left: 200px;
             font-size: 22px;
@@ -277,7 +277,7 @@ main {
     }
     h2 {
         font-size: 18px;
-        padding-top: 0.5em;
+        padding-top: 1em;
         margin-bottom : 0;
         color: #1a1a1a; 
         font-weight: 600;
@@ -382,7 +382,7 @@ main {
     @media only screen and (min-width: 735px) {
         float: left; 
         width: 250px;
-        margin: 0 20px 40px 60px;
+        margin: 0 20px 40px 30px;
     }
     @media only screen and (min-width: 855px) { // extra margin in between from now on
         width: 275px
@@ -411,10 +411,10 @@ main {
     }
     @media only screen and (min-width: 735px) {
         margin-right: 40px;
-        padding-left: 310px;
+        padding-left: 280px;
     }
     @media only screen and (min-width: 855px) {
-        padding-left: 335px;
+        padding-left: 350px;
     }
 }
 

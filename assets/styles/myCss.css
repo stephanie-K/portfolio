@@ -216,7 +216,7 @@ main {
         font-size: 26px; } }
   .cv h2 {
     font-size: 18px;
-    padding-top: 0.5em;
+    padding-top: 1em;
     margin-bottom: 0;
     color: #1a1a1a;
     font-weight: 600; }
@@ -310,7 +310,7 @@ main {
     .skills {
       float: left;
       width: 250px;
-      margin: 0 20px 40px 60px; } }
+      margin: 0 20px 40px 30px; } }
   @media only screen and (min-width: 855px) {
     .skills {
       width: 275px; } }
@@ -332,10 +332,10 @@ main {
   @media only screen and (min-width: 735px) {
     .education-work {
       margin-right: 40px;
-      padding-left: 310px; } }
+      padding-left: 280px; } }
   @media only screen and (min-width: 855px) {
     .education-work {
-      padding-left: 335px; } }
+      padding-left: 350px; } }
 
 p.date {
   font-family: 'Roboto Bold Condensed','Roboto',Helvetica,Arial,sans-serif;
