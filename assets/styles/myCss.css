@@ -66,23 +66,22 @@ header {
       padding: 10px 0 0 120px;
       text-align: left; }
     header img {
-      float: left;
       display: block;
-      margin-top: 10px;
-      margin-left: 15px;
+      float: left;
+      margin: 5px 15px;
       height: 80px;
       width: 80px; } }
   @media only screen and (min-width: 490px) {
     header {
       height: 150px; }
       header h1, header h2 {
-        margin: 15px 0;
+        margin: 20px 0;
         padding-left: 200px;
         font-size: 22px; }
       header h1 {
         font-size: 26px; }
       header img {
-        margin-top: 15px;
+        margin: 10px 30px;
         height: 130px;
         width: 130px; } }
 
@@ -138,6 +137,10 @@ main {
       font-size: 18px; } }
   main a:hover, main a:focus {
     color: #4f8f00; }
+  main a.invisible-link {
+    text-decoration: none;
+    font-family: Montserrat, 'Roboto Condensed', Helvetica, Arial, sans-serif;
+    font-weight: bold; }
   main p, main h1, main h2, main ul {
     margin-left: auto;
     margin-right: auto;

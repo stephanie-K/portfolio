@@ -55,8 +55,8 @@ header {
     background-color: #4f8f00 ;
     width: 100%;
     img {
-        display: none;
-    }
+        display: none; // if too small than don't show the photo
+    } 
     h1, h2 {
         font-size: 18px;
         padding-top: 5px;
@@ -81,10 +81,9 @@ header {
             text-align : left;
         }
         img {
-            float: left;
             display: block;
-            margin-top: 10px;
-            margin-left: 15px;
+            float: left;
+            margin: 5px 15px;
             height: 80px;
             width : 80px;
         }
@@ -93,7 +92,7 @@ header {
     @media only screen and (min-width: 490px) { 
         height: 150px;
         h1, h2 {
-            margin: 15px 0;
+            margin: 20px 0;
             padding-left: 200px;
             font-size: 22px;
         }
@@ -101,7 +100,7 @@ header {
             font-size:26px;
         }
         img {
-            margin-top: 15px;
+            margin: 10px 30px;
             height: 130px;
             width : 130px;
         }
@@ -170,6 +169,13 @@ main {
 
     a:hover, a:focus {
         color: #4f8f00;
+    }
+
+    a.invisible-link{
+        text-decoration: none;
+        font-family: Montserrat, 'Roboto Condensed', Helvetica, Arial, sans-serif;
+        font-weight: bold;
+
     }
 
    // this is to avoid the line of text to be too long to read on big screens. Max 740px and same white space on both side of it
