@@ -242,23 +242,17 @@ main {
         width: 22px; } }
   .cv .cv-name {
     display: none;
-    min-width: 400px;
-    margin-left: 30px;
-    margin-bottom: 40px; }
+    margin: 0 0 20px 30px; }
     .cv .cv-name h1 {
-      font-size: 26px;
-      margin-bottom: 0;
-      text-align: right; }
+      font-size: 26px; }
       @media only screen and (min-width: 855px) {
         .cv .cv-name h1 {
           font-size: 30px; } }
     .cv .cv-name h2 {
       font-family: 'Roboto Bold Condensed','Roboto',Helvetica,Arial,sans-serif;
       font-size: 22px;
-      margin-bottom: 0;
-      font-weight: 700;
-      text-align: right;
-      margin: 0; }
+      padding-top: 0;
+      font-weight: 700; }
       @media only screen and (min-width: 855px) {
         .cv .cv-name h2 {
           font-size: 24px; } }
@@ -268,7 +262,7 @@ main {
   .cv .cv-contact {
     margin: 20px 0;
     max-width: 1024px;
-    padding: 15px 0 10px 20px;
+    padding: 20px 0 20px 20px;
     font-weight: 500; }
     .cv .cv-contact a:hover, .cv .cv-contact a:focus {
       color: #4f8f00; }
@@ -279,7 +273,7 @@ main {
       color: #5a5a5a; }
     .cv .cv-contact p {
       font-family: 'Roboto Bold Condensed','Roboto',Helvetica,Arial,sans-serif;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 700; }
       @media only screen and (min-width: 855px) {
         .cv .cv-contact p {
@@ -287,14 +281,15 @@ main {
       @media only screen and (max-width: 390px) {
         .cv .cv-contact p {
           padding: 10px 5px; } }
+    .cv .cv-contact img {
+      padding-top: 25px; }
     @media only screen and (min-width: 735px) {
       .cv .cv-contact {
-        margin: 35px;
         float: right;
-        border-left: solid 2px #4f8f00; } }
-    @media only screen and (max-width: 390px) {
-      .cv .cv-contact {
-        padding: 10px 15px 10px 30px; } }
+        padding-left: 0;
+        border-left: solid 2px #4f8f00; }
+        .cv .cv-contact img {
+          padding-top: 0; } }
 
 .cv-banner {
   display: block; }
