@@ -336,10 +336,9 @@ main {
         }
     }
     .cv-contact {
-        margin: 20px;
+        margin: 20px 0;
         max-width: 1024px;
-        padding: 10px 0 10px 20px;
-        border-left: solid 2px #4f8f00; 
+        padding: 15px 0 10px 20px;
         font-weight: 500;
         a:hover, a:focus {
             color: #4f8f00;
@@ -362,14 +361,14 @@ main {
                 padding: 10px 5px;
             }
         }
+
         @media only screen and (min-width: 735px) {
+            margin: 35px;
             float: right;
-        }
-        @media only screen and (min-width: 855px) {
-            margin: 40px;
+            border-left: solid 2px #4f8f00; 
         }
         @media only screen and (max-width: 390px) {
-            padding: 10px 5px;
+            padding: 10px 15px 10px 30px;
         }
     }
 }
