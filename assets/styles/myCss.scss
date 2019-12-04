@@ -21,7 +21,7 @@ a {
     text-decoration: underline #aaaaaa;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: Montserrat, 'Roboto Condensed', Helvetica, Arial, sans-serif;
 }
 
@@ -179,7 +179,7 @@ main {
     }
 
    // this is to avoid the line of text to be too long to read on big screens. Max 740px and same white space on both side of it
-    p, h1, h2, ul {
+    p, h1, h2, ul, h3 {
         margin-left: auto;
         margin-right: auto;
         max-width: 740px;
@@ -189,7 +189,7 @@ main {
         text-align: left;
     }
 
-    h1, h2 {
+    h1, h2, h3 {
         font-size: 22px;
         padding-top: 2em;
         color: #4f8f00; 
@@ -258,9 +258,10 @@ main {
 }
 
 .work {
-    text-transform: uppercase;
+   // text-transform: uppercase;
     padding-top: 3em;
     color: #5a5a5a; 
+    font-weight: bold;
 
 }
 
@@ -269,11 +270,11 @@ main {
 .cv {
     position: relative;
     margin-bottom: 40px; /* to leave some room above the footer */
-      p, h1, h2 {
+      p, h1, h2, h3 {
         text-align: left;
     }
 
-    h1 {
+    h2 {
         font-size: 22px;
         padding-top: 1.5em;
         color: #4f8f00; 
@@ -281,7 +282,7 @@ main {
             font-size: 26px;
         }
     }
-    h2 {
+    h3 {
         font-size: 18px;
         padding-top: 1em;
         margin-bottom : 0;

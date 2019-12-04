@@ -18,7 +18,7 @@ a {
   font-weight: 500;
   text-decoration: underline #aaaaaa; }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: Montserrat, 'Roboto Condensed', Helvetica, Arial, sans-serif; }
 
 p {
@@ -141,19 +141,19 @@ main {
     text-decoration: none;
     font-family: Montserrat, 'Roboto Condensed', Helvetica, Arial, sans-serif;
     font-weight: bold; }
-  main p, main h1, main h2, main ul {
+  main p, main h1, main h2, main ul, main h3 {
     margin-left: auto;
     margin-right: auto;
     max-width: 740px;
     padding-left: 30px;
     padding-right: 30px;
     text-align: left; }
-  main h1, main h2 {
+  main h1, main h2, main h3 {
     font-size: 22px;
     padding-top: 2em;
     color: #4f8f00; }
     @media only screen and (min-width: 490px) {
-      main h1, main h2 {
+      main h1, main h2, main h3 {
         font-size: 26px; } }
   @media only screen and (min-width: 490px) {
     main p {
@@ -199,32 +199,32 @@ main {
   border-bottom: solid 1px #ffffff; }
 
 .work {
-  text-transform: uppercase;
   padding-top: 3em;
-  color: #5a5a5a; }
+  color: #5a5a5a;
+  font-weight: bold; }
 
 /* ----------------------------------------------  For the CV  ---------------------------------------------- */
 .cv {
   position: relative;
   margin-bottom: 40px;
   /* to leave some room above the footer */ }
-  .cv p, .cv h1, .cv h2 {
+  .cv p, .cv h1, .cv h2, .cv h3 {
     text-align: left; }
-  .cv h1 {
+  .cv h2 {
     font-size: 22px;
     padding-top: 1.5em;
     color: #4f8f00; }
     @media only screen and (min-width: 490px) {
-      .cv h1 {
+      .cv h2 {
         font-size: 26px; } }
-  .cv h2 {
+  .cv h3 {
     font-size: 18px;
     padding-top: 1em;
     margin-bottom: 0;
     color: #1a1a1a;
     font-weight: 600; }
     @media only screen and (min-width: 490px) {
-      .cv h2 {
+      .cv h3 {
         font-size: 20px; } }
   .cv p {
     font-size: 14px;
