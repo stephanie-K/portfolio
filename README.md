@@ -11,5 +11,4 @@ https://stephanie.chezleskrus.com
 
 **Next steps**
 - review accessibility, ARIA and more and test with screen-reader 
-- enhance with Javascript?
-- improve with CSS transitions?
+
