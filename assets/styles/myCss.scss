@@ -178,6 +178,17 @@ main {
 
     }
 
+    a.big-link {
+        font-family: Montserrat, 'Roboto Condensed', Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        color: #4f8f00;
+    }
+
+    a.big-link:hover, a.big-link:focus {
+        color: #5a5a5a; 
+    }
+
    // this is to avoid the line of text to be too long to read on big screens. Max 740px and same white space on both side of it
     p, h1, h2, ul, h3 {
         margin-left: auto;
@@ -262,6 +273,7 @@ main {
     padding-top: 3em;
     color: #5a5a5a; 
     font-weight: bold;
+    font-size: 32px;
 
 }
 

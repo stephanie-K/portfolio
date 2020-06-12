@@ -141,6 +141,13 @@ main {
     text-decoration: none;
     font-family: Montserrat, 'Roboto Condensed', Helvetica, Arial, sans-serif;
     font-weight: bold; }
+  main a.big-link {
+    font-family: Montserrat, 'Roboto Condensed', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #4f8f00; }
+  main a.big-link:hover, main a.big-link:focus {
+    color: #5a5a5a; }
   main p, main h1, main h2, main ul, main h3 {
     margin-left: auto;
     margin-right: auto;
@@ -201,7 +208,8 @@ main {
 .work {
   padding-top: 3em;
   color: #5a5a5a;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 32px; }
 
 /* ----------------------------------------------  For the CV  ---------------------------------------------- */
 .cv {
