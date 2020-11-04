@@ -1,14 +1,5 @@
 # Portfolio
-This is a simple website to illustrate my experience in UX Design.
-
-Using only CSS with SASS - No Javascript for now -
-Accessible and responsive
+This is a simple website to illustrate my experience in Design.
 
 Can be visited here: 
 https://stephanie.chezleskrus.com
-
----
-
-**Next steps**
-- review accessibility, ARIA and more and test with screen-reader 
-
