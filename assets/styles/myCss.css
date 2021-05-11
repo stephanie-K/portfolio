@@ -61,7 +61,7 @@ header {
     font-weight: 600; }
   @media only screen and (max-width: 359px) {
     header p {
-      padding-left: 2em; }
+      padding-left: 0.8em; }
     header img {
       display: none; } }
   @media only screen and (min-width: 490px) {
@@ -273,6 +273,9 @@ footer {
 
 .with-border {
   border: solid 1px #d0e3ff; }
+
+iframe, video {
+  max-width: 100%; }
 
 button {
   color: #ffffff;
