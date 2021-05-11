@@ -362,6 +362,13 @@ footer {
     border: solid 1px #d0e3ff ; // #e3e3e3;
 }
 
+iframe, video {
+    @media only screen and (max-width: 560px) {
+        width: 100%;
+    }
+}
+
+
 button{ 
     color : #ffffff;
     text-transform: uppercase;
