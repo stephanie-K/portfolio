@@ -59,7 +59,7 @@ header {
   header .name {
     color: #000000;
     font-weight: 600; }
-  @media only screen and (max-width: 359px) {
+  @media only screen and (max-width: 380px) {
     header p {
       padding-left: 0.8em; }
     header img {
@@ -69,7 +69,7 @@ header {
       height: 150px; }
       header p {
         padding-left: 200px;
-        font-size: 1.5em; }
+        font-size: 1.3em; }
       header .name {
         font-size: 2em; }
       header img {

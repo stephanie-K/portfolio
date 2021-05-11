@@ -75,7 +75,7 @@ header {
     }
 
     /* on small screen */
-    @media only screen and (max-width: 359px) { 
+    @media only screen and (max-width: 380px) { 
         p {
             padding-left: 0.8em;
         }
@@ -89,7 +89,7 @@ header {
         p{
             // margin: 20px 0;
             padding-left: 200px;
-            font-size: 1.5em;
+            font-size: 1.3em;
         }
         .name{
             font-size: 2em;
