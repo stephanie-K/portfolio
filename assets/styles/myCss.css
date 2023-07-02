@@ -206,7 +206,7 @@ main {
   font-size: 1.4em; }
   @media only screen and (min-width: 490px) {
     .alt-h2 {
-      font-size: 1.6em; } }
+      font-size: 2em; } }
 
 /* ----------------------------------------------  For the CV  ---------------------------------------------- */
 .cv a.inverted {
@@ -222,12 +222,12 @@ main {
   border-top: solid 2px #4f8f00;
   margin-top: 1em; }
 .cv h3 {
-  font-size: 1.2em; }
+  font-size: 1.6em; }
 .cv p {
   margin: 0.2em auto; }
 .cv p.date {
   font-family: 'Roboto Condensed','Roboto',Helvetica,Arial,sans-serif;
-  color: #888888;
+  color: #5a5a5a;
   font-weight: 700; }
 
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
