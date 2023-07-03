@@ -54,10 +54,11 @@ header {
     margin-bottom: 0;
     margin-top: 0.5em;
     color: white;
-    font-size: 1.2em; }
+    font-size: 1em; }
   header .name {
     color: #4f8f00;
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 1.2em; }
   @media only screen and (max-width: 380px) {
     header p {
       padding-left: 0.8em; }
@@ -65,7 +66,8 @@ header {
       display: none; } }
   @media only screen and (min-width: 490px) {
     header {
-      height: 150px; }
+      height: 170px;
+      padding: 10px 0; }
       header p {
         padding-left: 200px;
         font-size: 1.3em; }
@@ -111,9 +113,11 @@ nav {
     color: #286300;
     background-color: #FCFAF7;
     border-bottom: solid 4px #FCFAF7; }
+  nav a.on-the-page:hover, nav a.on-the-page:focus {
+    border-bottom: solid 4px #4f8f00; }
   @media only screen and (min-width: 490px) {
     nav {
-      top: 150px; } }
+      top: 170px; } }
 
 /* ----------------------------------------------  Body of a page  ---------------------------------------------- */
 main {
@@ -146,18 +150,31 @@ main {
     padding-right: 30px;
     text-align: left; }
   main h1, main h2, main h3 {
-    font-size: 1.4em;
     padding-top: 2em;
     color: #408000; }
-    @media only screen and (min-width: 490px) {
-      main h1, main h2, main h3 {
-        font-size: 1.6em; } }
+  main h1 {
+    font-size: 1.6em; }
+    @media only screen and (min-width: 992px) {
+      main h1 {
+        font-size: 2.2em; } }
+  main h2 {
+    font-size: 1.4em; }
+    @media only screen and (min-width: 992px) {
+      main h2 {
+        font-size: 2em; } }
+  main h3 {
+    font-size: 1.2em; }
+    @media only screen and (min-width: 992px) {
+      main h3 {
+        font-size: 1.8em; } }
   main h3.alt {
     color: #1a1a1a;
-    font-size: 1.2em;
     padding-top: 1.5em; }
   main .alt-h1 {
     padding-top: 0;
+    color: #5a5a5a;
+    font-weight: bold; }
+  main .alt-h2 {
     color: #5a5a5a;
     font-weight: bold; }
   main .lead {
@@ -165,7 +182,7 @@ main {
     padding-top: 2em;
     font-weight: 600;
     font-size: 1em; }
-    @media only screen and (min-width: 490px) {
+    @media only screen and (min-width: 992px) {
       main .lead {
         font-size: 1.2em; } }
   main ul {
@@ -200,14 +217,6 @@ main {
   width: 100%;
   border-bottom: solid 1px #fcfaf7; }
 
-.alt-h2 {
-  color: #5a5a5a;
-  font-weight: bold;
-  font-size: 1.4em; }
-  @media only screen and (min-width: 490px) {
-    .alt-h2 {
-      font-size: 2em; } }
-
 /* ----------------------------------------------  For the CV  ---------------------------------------------- */
 .cv a.inverted {
   color: #408000;
@@ -219,10 +228,7 @@ main {
   margin: 0.2em auto;
   padding-top: 1em; }
 .cv h2 {
-  border-top: solid 2px #4f8f00;
-  margin-top: 1em; }
-.cv h3 {
-  font-size: 1.6em; }
+  border-top: solid 2px #4f8f00; }
 .cv p {
   margin: 0.2em auto; }
 .cv p.date {
