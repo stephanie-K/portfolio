@@ -53,8 +53,8 @@ nav {
     width: 100%;
     top: 0;
     height: 40px;
-    background-color: #1a1a1a; //4f8f00;
-    border-bottom: solid 4px #1a1a1a; //4f8f00;
+    background-color: #1a1a1a;
+    border-bottom: solid 4px #1a1a1a; 
     
 
     a {
@@ -308,7 +308,7 @@ footer {
     margin-top: 44px; // to display below the nav bar
 }
 .profile {
-    @media only screen and (max-width: 560px) {
+    @media only screen and (max-width: 460px) {
         width: 100%;
     }  
 }
