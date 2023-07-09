@@ -44,66 +44,6 @@ p {
 }
 
 
-/* ----------------------------------------------  Banner  ---------------------------------------------- */
-
-header {
-    position: fixed;
-    z-index: 1 ; /* so the body content scrolls under the sticky banner + navbar */
-    top: 0;
-    height: 90px;
-    background-color: #000000;//4f8f00 ;
-    width: 100%;
-    img {
-        display: block;
-        float: left;
-        margin: 5px 15px;
-        height: 80px;
-        width : 80px;
-    } 
-
-    p {
-        margin-bottom: 0;
-        margin-top: 0.5em;
-        color: white ;
-        font-size: 1em;
-    }
-
-    .name {
-        //text-transform: uppercase; 
-        color: #4f8f00;
-        font-weight: 600;
-        font-size: 1.2em;
-    }
-
-    /* on small screen */
-    @media only screen and (max-width: 380px) { 
-        p {
-            padding-left: 0.8em;
-        }
-        img {
-            display: none; // if too small than don't show the photo
-        }
-    }
-
-    @media only screen and (min-width: 490px) { 
-        height: 170px; //150px;
-        padding: 10px 0;
-        p{
-            // margin: 20px 0;
-            padding-left: 200px;
-            font-size: 1.3em;
-        }
-        .name{
-            font-size: 2em;
-        }
-        img {
-            margin: 10px 30px; // 20px 30px 50px 30px;
-            height: 130px;
-            width : 130px;
-        }
-    }
-}
-
 
 /* ----------------------------------------------  Navbar  ---------------------------------------------- */
 
@@ -111,10 +51,10 @@ nav {
     position: fixed;
     z-index: 1 ; /* so the body content scrolls under the sticky banner + navbar */
     width: 100%;
-    top: 90px;
+    top: 0;
     height: 40px;
-    background-color: #4f8f00; // E3E3E3 ;
-    border-bottom: solid 4px #4f8f00; // E3E3E3 ;
+    background-color: #4f8f00;
+    border-bottom: solid 4px #4f8f00; 
     
 
     a {
@@ -150,10 +90,6 @@ nav {
     a.on-the-page:hover, a.on-the-page:focus {
         border-bottom: solid 4px #4f8f00;
     }
-
-    @media only screen and (min-width: 490px) { 
-        top : 170px;
-    }
 }
 
 
@@ -161,12 +97,6 @@ nav {
 
 main {
     position: relative;
-    margin-top: 131px; /* size of banner  + navbar */
-    margin-bottom: 40px; /* to leave some room above the footer */
-    @media only screen and (min-width: 490px) { 
-        margin-top: 193px;
-        //font-size: 1.2em;
-    }
 
     a:hover, a:focus {
         color: #408000; //4f8f00;
@@ -275,22 +205,13 @@ main {
             max-width: 100%;
         }
     }
-    .icon-very-big {
-        vertical-align: top;
-        height: 120px;
-        padding: 5px 10px 5px 0;
 
-    }
     ::selection {
         background: #cae0af;
         color: #1a1a1a;
     }
 }
 
-.hero-img {
-    width: 100%;
-    border-bottom: solid 1px #fcfaf7 ;
-}
 
 /* ----------------------------------------------  For the CV  ---------------------------------------------- */
 
@@ -326,6 +247,7 @@ main {
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
 
 footer {
+    margin-top: 2em;
     height: 30px;
     padding: 20px 0 40px 20px;
     background-color: #373737;
@@ -376,7 +298,17 @@ footer {
     width: 100%;
 }
 .with-border {
-    border: solid 1px #d0e3ff ; // #e3e3e3;
+    border: solid 1px #d0e3ff ;
+}
+.hero-img {
+    width: 100%;
+    border-bottom: solid 1px #fcfaf7 ;
+    margin-top: 44px; // to display below the nav bar
+}
+.profile {
+    @media only screen and (max-width: 560px) {
+        width: 100%;
+    }  
 }
 
 iframe, video {

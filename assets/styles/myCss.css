@@ -34,57 +34,13 @@ p {
 
   .cv-contact {
     width: 300px; } }
-/* ----------------------------------------------  Banner  ---------------------------------------------- */
-header {
-  position: fixed;
-  z-index: 1;
-  /* so the body content scrolls under the sticky banner + navbar */
-  top: 0;
-  height: 90px;
-  background-color: #000000;
-  width: 100%;
-  /* on small screen */ }
-  header img {
-    display: block;
-    float: left;
-    margin: 5px 15px;
-    height: 80px;
-    width: 80px; }
-  header p {
-    margin-bottom: 0;
-    margin-top: 0.5em;
-    color: white;
-    font-size: 1em; }
-  header .name {
-    color: #4f8f00;
-    font-weight: 600;
-    font-size: 1.2em; }
-  @media only screen and (max-width: 380px) {
-    header p {
-      padding-left: 0.8em; }
-    header img {
-      display: none; } }
-  @media only screen and (min-width: 490px) {
-    header {
-      height: 170px;
-      padding: 10px 0; }
-      header p {
-        padding-left: 200px;
-        font-size: 1.3em; }
-      header .name {
-        font-size: 2em; }
-      header img {
-        margin: 10px 30px;
-        height: 130px;
-        width: 130px; } }
-
 /* ----------------------------------------------  Navbar  ---------------------------------------------- */
 nav {
   position: fixed;
   z-index: 1;
   /* so the body content scrolls under the sticky banner + navbar */
   width: 100%;
-  top: 90px;
+  top: 0;
   height: 40px;
   background-color: #4f8f00;
   border-bottom: solid 4px #4f8f00; }
@@ -115,20 +71,10 @@ nav {
     border-bottom: solid 4px #FCFAF7; }
   nav a.on-the-page:hover, nav a.on-the-page:focus {
     border-bottom: solid 4px #4f8f00; }
-  @media only screen and (min-width: 490px) {
-    nav {
-      top: 170px; } }
 
 /* ----------------------------------------------  Body of a page  ---------------------------------------------- */
 main {
-  position: relative;
-  margin-top: 131px;
-  /* size of banner  + navbar */
-  margin-bottom: 40px;
-  /* to leave some room above the footer */ }
-  @media only screen and (min-width: 490px) {
-    main {
-      margin-top: 193px; } }
+  position: relative; }
   main a:hover, main a:focus {
     color: #408000; }
   main a.invisible-link {
@@ -205,17 +151,9 @@ main {
     @media only screen and (max-width: 470px) {
       main .icon-big {
         max-width: 100%; } }
-  main .icon-very-big {
-    vertical-align: top;
-    height: 120px;
-    padding: 5px 10px 5px 0; }
   main ::selection {
     background: #cae0af;
     color: #1a1a1a; }
-
-.hero-img {
-  width: 100%;
-  border-bottom: solid 1px #fcfaf7; }
 
 /* ----------------------------------------------  For the CV  ---------------------------------------------- */
 .cv a.inverted {
@@ -238,6 +176,7 @@ main {
 
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
 footer {
+  margin-top: 2em;
   height: 30px;
   padding: 20px 0 40px 20px;
   background-color: #373737;
@@ -282,6 +221,15 @@ footer {
 
 .with-border {
   border: solid 1px #d0e3ff; }
+
+.hero-img {
+  width: 100%;
+  border-bottom: solid 1px #fcfaf7;
+  margin-top: 44px; }
+
+@media only screen and (max-width: 560px) {
+  .profile {
+    width: 100%; } }
 
 iframe, video {
   max-width: 100%; }
