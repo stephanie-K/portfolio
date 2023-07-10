@@ -175,6 +175,8 @@ main {
   font-family: 'Roboto Condensed','Roboto',Helvetica,Arial,sans-serif;
   color: #5a5a5a;
   font-weight: 700; }
+.cv h3 {
+  font-size: 1.2em; }
 
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
 footer {
