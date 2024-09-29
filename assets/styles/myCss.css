@@ -17,15 +17,18 @@ a {
   font-weight: 500;
   text-decoration: underline #aaaaaa; }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: Roboto, Montserrat, Helvetica, Arial, sans-serif; }
 
 p {
   padding-top: 0;
   padding-bottom: 0;
-  font-size: 1em;
-  line-height: 1.5;
+  font-size: 1.1em;
+  line-height: 1.6;
   font-weight: 400; }
+ul {
+  font-size: 1.1em;
+}
 
 /* for very small screen */
 @media only screen and (max-width: 313px) {
@@ -90,14 +93,14 @@ main {
     color: #408000; }
   main a.big-link:hover, main a.big-link:focus {
     color: #5a5a5a; }
-  main p, main h1, main h2, main ul, main h3 {
+  main p, main h1, main h2, main ul, main h3, main h4 {
     margin-left: auto;
     margin-right: auto;
     max-width: 740px;
     padding-left: 30px;
     padding-right: 30px;
     text-align: left; }
-  main h1, main h2, main h3 {
+  main h1, main h2, main h3{
     padding-top: 2em;
     color: #408000; }
   main h1 {
@@ -115,6 +118,14 @@ main {
     @media only screen and (min-width: 992px) {
       main h3 {
         font-size: 1.8em; } }
+  main h4 {
+    font-size: 1.1em;
+    color: #1a1a1a; 
+    margin-top: 2em;
+    margin-bottom: 0.2em; }
+    @media only screen and (min-width: 992px) {
+      main h4 {
+        font-size: 1.2em; } }
   main h3.alt {
     color: #1a1a1a;
     padding-top: 1.5em; }
@@ -128,12 +139,12 @@ main {
     font-family: Roboto, Montserrat, Helvetica, Arial, sans-serif;
     padding-top: 2em;
     font-weight: 600;
-    font-size: 1em; }
+    font-size: 1.1em; }
     @media only screen and (min-width: 992px) {
       main .lead {
         font-size: 1.2em; } }
   main ul {
-    line-height: 1.5;
+    line-height: 1.6;
     padding-left: 60px; }
     @media only screen and (min-width: 768px) {
       main ul {
