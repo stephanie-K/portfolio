@@ -31,7 +31,7 @@ ul {
 }
 
 /* for very small screen */
-@media only screen and (max-width: 313px) {
+@media only screen and (max-width: 310px) {
   p, ul {
     font-size: 0.8em; }
 
@@ -58,7 +58,7 @@ nav {
     height: 16px;
     padding: 12px 20px;
     /* for very small screen */ }
-    @media only screen and (max-width: 313px) {
+    @media only screen and (max-width: 360px) {
       nav a {
         padding: 12px 10px; } }
     @media only screen and (min-width: 490px) {
@@ -112,19 +112,19 @@ main {
     font-size: 1.4em; }
     @media only screen and (min-width: 992px) {
       main h2 {
-        font-size: 2em; } }
+        font-size: 2em; } } 
   main h3 {
     font-size: 1.2em; }
     @media only screen and (min-width: 992px) {
       main h3 {
         font-size: 1.8em; } }
-  main h4 {
+  main h4, h2.small-h2  {
     font-size: 1.1em;
     color: #1a1a1a; 
     margin-top: 2em;
     margin-bottom: 0.2em; }
     @media only screen and (min-width: 992px) {
-      main h4 {
+      main h4, h2.small-h2 {
         font-size: 1.2em; } }
   main h3.alt {
     color: #1a1a1a;
@@ -171,7 +171,8 @@ main {
 .cv a.inverted {
   color: #408000;
   text-decoration: none;
-  font-weight: 600; }
+  font-weight: 600;
+  font-size: 0.8em;}
 .cv a.inverted:hover, .cv a.inverted:focus {
   color: #5a5a5a; }
 .cv h2, .cv h3, .cv h4 {
@@ -189,6 +190,14 @@ main {
   font-size: 1.2em; }
   .cv h4 {
     font-size: 1.1em; }
+
+/* ----------------------------------------------  For talk alternative  ---------------------------------------------- */
+.talk h1 {
+  color: #434343 ;}
+.talk h2 {
+  color: #073763 ;}
+.talk h3 {
+  color: #741b47 ;}
 
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
 footer {
