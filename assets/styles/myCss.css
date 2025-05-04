@@ -93,7 +93,7 @@ main {
     color: #408000; }
   main a.big-link:hover, main a.big-link:focus {
     color: #5a5a5a; }
-  main p, main h1, main h2, main ul, main h3, main h4 {
+  main p, main h1, main h2, main ul, main h3, main h4, main blockquote {
     margin-left: auto;
     margin-right: auto;
     max-width: 740px;
@@ -195,10 +195,54 @@ main {
 .talk h1 {
   color: #434343 ;}
 .talk h2 {
-  color: #073763 ;}
+  background-color: #434343 ;
+  color: #ffffff;
+  padding: 2em 1em;}
+.talk h2.mauve {
+  background-color: #741B47;
+}
+.talk h2.blue {
+  background-color: #073763;
+}
+.talk h2.yellow {
+  background-color: #ffd966;
+  color: #2a2a2a;
+}
+.talk h2.orange {
+  background-color: #ff9900;
+  color: #2a2a2a;
+}
 .talk h3 {
-  color: #741b47 ;}
+  color: #434343;
+  border-top: solid 5px #434343;
+  padding-top: 1em;}
+.talk h3.mauve {
+  color: #741B47;
+  border-top-color: #741B47;
+}
+.talk h3.blue {
+  color: #073763;
+  border-top-color: #073763;
+}
+blockquote {
+  font-size: 1em ;
+  text-align: left;
+  color: #2a2a2a;
+  background-color: #ffffff;
+  padding:1.5em;
+  border-left: 0.5em solid #434343;
+  margin-bottom: 2em;
+}
 
+blockquote.mauve {
+  border-left-color: #741B47;
+  background-color: #ead1dc50;
+}
+
+blockquote.blue {
+  border-left-color: #073763;
+  background-color: #cfe2f350;
+}
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
 footer {
   margin-top: 2em;
