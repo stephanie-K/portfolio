@@ -93,7 +93,7 @@ main {
     color: #408000; }
   main a.big-link:hover, main a.big-link:focus {
     color: #5a5a5a; }
-  main p, main h1, main h2, main ul, main h3, main h4, main blockquote {
+  main p, main h1, main h2, main ul, main h3, main h4, main blockquote, table {
     margin-left: auto;
     margin-right: auto;
     max-width: 740px;
@@ -192,6 +192,12 @@ main {
     font-size: 1.1em; }
 
 /* ----------------------------------------------  For talk alternative  ---------------------------------------------- */
+
+.talk a {
+  color: #0b5394;
+}
+.talk a:hover, .talk a:focus {
+  color: #434343; }
 .talk h1 {
   color: #434343 ;}
 .talk h2 {
@@ -206,11 +212,11 @@ main {
 }
 .talk h2.yellow {
   background-color: #ffd966;
-  color: #2a2a2a;
+  color: #1a1a1a;
 }
 .talk h2.orange {
   background-color: #ff9900;
-  color: #2a2a2a;
+  color: #1a1a1a;
 }
 .talk h3 {
   color: #434343;
@@ -233,15 +239,21 @@ blockquote {
   border-left: 0.5em solid #434343;
   margin-bottom: 2em;
 }
-
 blockquote.mauve {
   border-left-color: #741B47;
   background-color: #ead1dc50;
 }
-
 blockquote.blue {
   border-left-color: #073763;
   background-color: #cfe2f350;
+}
+table.no-line-border-right {
+  border-collapse:collapse;
+  border-right: 10px solid #fcfaf7;
+}
+th, td {
+  padding: 0.5em 1em;
+  border-right: 10px solid #fcfaf7;
 }
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
 footer {
