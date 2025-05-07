@@ -313,7 +313,7 @@ footer {
     width: 100%; } }
 
 @media only screen and (max-width: 550px) {
-  img {
+  img.talk-big {
     width: 100%; } }
 
 iframe, video {
