@@ -312,6 +312,10 @@ footer {
   .profile {
     width: 100%; } }
 
+@media only screen and (max-width: 550px) {
+  img {
+    width: 100%; } }
+
 iframe, video {
   max-width: 100%; }
 
