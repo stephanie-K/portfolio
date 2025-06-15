@@ -93,7 +93,7 @@ main {
     color: #408000; }
   main a.big-link:hover, main a.big-link:focus {
     color: #5a5a5a; }
-  main p, main h1, main h2, main ul, main h3, main h4, main blockquote, table {
+  main p, main h1, main h2, main ul, main h3, main h4, main blockquote, table, figure {
     margin-left: auto;
     margin-right: auto;
     max-width: 740px;
@@ -316,7 +316,7 @@ footer {
   img.talk-big {
     width: 100%; } }
 
-iframe, video {
+iframe, video, img {
   max-width: 100%; }
 
 .warning {
