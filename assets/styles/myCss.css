@@ -218,6 +218,10 @@ main {
   background-color: #ff9900;
   color: #1a1a1a;
 }
+.talk h2.purple {
+  background-color: #513184;
+}
+
 .talk h3 {
   color: #434343;
   border-top: solid 5px #434343;
@@ -229,6 +233,10 @@ main {
 .talk h3.blue {
   color: #073763;
   border-top-color: #073763;
+}
+.talk h3.purple {
+  color: #513184;
+  border-top-color: #513184;
 }
 blockquote {
   font-size: 1em ;
