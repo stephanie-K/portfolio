@@ -340,4 +340,10 @@ iframe, video, img {
 .margin-top-2 {
   margin-top: 2em; }
 
+ul.wider {
+  li {
+  padding-bottom: 0.7em;
+  }
+}
+
 
