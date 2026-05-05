@@ -221,6 +221,9 @@ main {
 .talk h2.purple {
   background-color: #513184;
 }
+.talk h2.dark-green {
+  background-color: #1d5c65;
+}
 
 .talk h3 {
   color: #434343;
@@ -238,6 +241,25 @@ main {
   color: #513184;
   border-top-color: #513184;
 }
+.talk h3.dark {
+  background-color: #434343 ;
+  color: #ffffff;
+  padding: 2em 1em;
+}
+.talk h3.pink {
+  color: #a60070;
+  border-top-color: #a60070;
+}
+.talk h3.dark-green {
+  color: #1d5c65;
+  border-top-color: #1d5c65;
+}
+.talk h4.pink {
+  color: #a60070;
+  border-top: solid 5px#a60070;
+  padding-top: 1em;
+}
+
 blockquote {
   font-size: 1em ;
   text-align: left;
@@ -254,6 +276,11 @@ blockquote.mauve {
 blockquote.blue {
   border-left-color: #073763;
   background-color: #cfe2f350;
+}
+blockquote.resources {
+  border-left-color: #a60070;
+  background-color: #a60070;
+  color: #ffffff;
 }
 table.no-line-border-right {
   border-collapse:collapse;
