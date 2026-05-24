@@ -93,7 +93,7 @@ main {
     color: #408000; }
   main a.big-link:hover, main a.big-link:focus {
     color: #5a5a5a; }
-  main p, main h1, main h2, main ul, main h3, main h4, main blockquote, table, figure {
+  main p, main h1, main h2, main ul, main h3, main h4, main blockquote, table, figure, .resources-pink {
     margin-left: auto;
     margin-right: auto;
     max-width: 740px;
@@ -277,11 +277,6 @@ blockquote.blue {
   border-left-color: #073763;
   background-color: #cfe2f350;
 }
-blockquote.resources {
-  border-left-color: #a60070;
-  background-color: #a60070;
-  color: #ffffff;
-}
 table.no-line-border-right {
   border-collapse:collapse;
   border-right: 10px solid #fcfaf7;
@@ -290,6 +285,23 @@ th, td {
   padding: 0.5em 1em;
   border-right: 10px solid #fcfaf7;
 }
+
+.resources-pink {
+  background-color: #a60070; 
+  color: #fff; 
+  padding-bottom: 0.8em;
+}
+.resources-pink a, .resources-pink h3, .resources-pink h4 {
+  color: #fff; 
+}
+.resources-pink h3 {
+  border-top: solid 5px#a60070;
+  padding-top: 0.8em;
+}
+.resources-pink a:hover, .resources-pink a:focus {
+  color: yellow; }
+
+
 /* ----------------------------------------------  Footer  ---------------------------------------------- */
 footer {
   margin-top: 2em;
