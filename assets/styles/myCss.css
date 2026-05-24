@@ -26,13 +26,13 @@ p {
   font-size: 1.1em;
   line-height: 1.6;
   font-weight: 400; }
-ul {
+ul, ol {
   font-size: 1.1em;
 }
 
 /* for very small screen */
 @media only screen and (max-width: 310px) {
-  p, ul {
+  p, ul, ol {
     font-size: 0.8em; }
 
   .cv-contact {
@@ -93,7 +93,7 @@ main {
     color: #408000; }
   main a.big-link:hover, main a.big-link:focus {
     color: #5a5a5a; }
-  main p, main h1, main h2, main ul, main h3, main h4, main blockquote, table, figure, .resources-pink {
+  main p, main h1, main h2, main ul, main ol, main h3, main h4, main blockquote, table, figure, .resources-pink {
     margin-left: auto;
     margin-right: auto;
     max-width: 740px;
@@ -143,14 +143,14 @@ main {
     @media only screen and (min-width: 992px) {
       main .lead {
         font-size: 1.2em; } }
-  main ul {
+  main ul , main ol {
     line-height: 1.6;
     padding-left: 60px; }
     @media only screen and (min-width: 768px) {
-      main ul {
+      main ul,  main ol{
         padding-left: 90px; } }
     @media only screen and (min-width: 992px) {
-      main ul {
+      main ul, main ol {
         padding-left: 120px; } }
   main .icon {
     vertical-align: top;
