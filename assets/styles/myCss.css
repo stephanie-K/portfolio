@@ -254,6 +254,11 @@ main {
   color: #1d5c65;
   border-top-color: #1d5c65;
 }
+.talk h4.dark-green {
+  color: #1d5c65;
+  border-top: solid 5px#1d5c65;
+  padding-top: 1em;
+}
 .talk h4.pink {
   color: #a60070;
   border-top: solid 5px#a60070;
